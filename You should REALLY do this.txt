@@ -1,0 +1,11 @@
+#1: When you want to put your server online, search for "localhost" in the client and replace it with your server's address. (Configuration.java)
+
+
+#2: Regenerate RSA keys... 
+Search for "//REGENERATE RSA" in the source.
+You should find 1 result in client, and 1 result in server.
+
+Use the RSAKeyGenerator class to do this.
+
+Do NOT use the included RSAPrivateKeys.txt and RSAPublicKeys.txt, they were generated at release.
+Anyone who downloads the same source as you will have them.
