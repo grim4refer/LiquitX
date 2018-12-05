@@ -1275,6 +1275,31 @@ public class Model extends Animable {
 		}
 	}
 
+	public void method1337(int j) {
+		for (int k = 0; k < anInt1630; k++) {
+			anIntArray1640[k] = j;
+		}
+	}
+
+	public void method1338(int j) {
+		j += 100;
+		int kcolor = 0;
+		for (int k = 0; k < anInt1630; k++) {
+			kcolor = anIntArray1640[k];
+			if (k + j >= 0)
+				anIntArray1640[k] = kcolor + j;
+		}
+	}
+
+	public void method1339(int j) {
+		j += 1;
+		for (int k = 0; k < anInt1630; k++) {
+			if (k + j >= 0)
+				anIntArray1640[k] = k + j;
+		}
+	}
+
+
 	public void method477() {
 		for (int j = 0; j < numberOfVerticeCoordinates; j++) {
 			verticesZCoordinate[j] = -verticesZCoordinate[j];

@@ -10,52 +10,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="LiquidX Client" />
+  </component>
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="ItemDefinition.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ItemDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="552" column="24" selection-start-line="552" selection-start-column="24" selection-end-line="552" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="14331" selection-start-line="14331" selection-end-line="14331" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameRenderer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/GameRenderer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="1037" selection-start-line="1037" selection-end-line="1037" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TabArea.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/graphics/gameframe/impl/TabArea.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="346" selection-start-line="346" selection-end-line="346" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameFrame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/graphics/gameframe/GameFrame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="93" selection-start-line="93" selection-end-line="93" />
-              <folding>
-                <element signature="e#1928#1929#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="207">
+              <caret line="559" column="22" lean-forward="true" selection-start-line="559" selection-start-column="22" selection-end-line="559" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -63,8 +27,8 @@
       <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/world/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="1269" column="4" selection-start-line="1269" selection-start-column="4" selection-end-line="1275" selection-end-column="5" />
+            <state relative-caret-position="191">
+              <caret line="1283" column="26" selection-start-line="1283" selection-start-column="16" selection-end-line="1283" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -83,18 +47,27 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>origin</find>
-      <find>starter</find>
       <find>if (modifiedModelColors2 != null) {</find>
       <find>method476</find>
-      <find>modifiedModelColors2</find>
       <find>if (modi</find>
       <find>originalModelColors</find>
       <find>modif</find>
-      <find>modifiedModelColors</find>
       <find>modifiedModelColors.length;</find>
       <find>model.method476(modifiedModelColors[l</find>
       <find>start</find>
+      <find>modifiedModelColors2</find>
+      <find>public Model get</find>
+      <find>public Model</find>
+      <find>starter</find>
+      <find>moti</find>
+      <find>modifiedModelColors</find>
+      <find>recolour1</find>
+      <find>recolor1 =</find>
+      <find>1115</find>
     </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
   </component>
   <component name="GradleLocalSettings">
     <option name="projectSyncType">
@@ -112,7 +85,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="3" />
+    <option name="y" value="1" />
     <option name="width" value="1280" />
     <option name="height" value="778" />
   </component>
@@ -257,7 +230,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="0" width="1280" height="778" extended-state="0" />
+    <frame x="0" y="1" width="1280" height="778" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
@@ -270,17 +243,17 @@
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35095447" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32965517" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32892805" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8371041" visible="true" weight="0.24959612" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32892805" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
       <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Favorites" sideWeight="0.16289593" side_tool="true" visible="true" weight="0.24959612" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -292,20 +265,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/GameRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="1037" selection-start-line="1037" selection-end-line="1037" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/graphics/gameframe/impl/TabArea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="346" selection-start-line="346" selection-end-line="346" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/graphics/gameframe/GameFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -316,17 +275,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/world/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="1269" column="4" selection-start-line="1269" selection-start-column="4" selection-end-line="1275" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/io/ByteBuffer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="456" selection-start-line="456" selection-end-line="456" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/GameRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="1033" column="24" selection-start-line="1033" selection-start-column="24" selection-end-line="1033" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/RSInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="2705" column="42" selection-start-line="2705" selection-start-column="42" selection-end-line="2705" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/entity/player/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="176" column="14" selection-start-line="176" selection-start-column="14" selection-end-line="176" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -337,10 +310,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/graphics/gameframe/impl/TabArea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="346" selection-start-line="346" selection-end-line="346" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/world/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="1283" column="26" selection-start-line="1283" selection-start-column="16" selection-end-line="1283" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ItemDefinition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="552" column="24" selection-start-line="552" selection-start-column="24" selection-end-line="552" selection-end-column="24" />
+        <state relative-caret-position="207">
+          <caret line="559" column="22" lean-forward="true" selection-start-line="559" selection-start-column="22" selection-end-line="559" selection-end-column="22" />
         </state>
       </provider>
     </entry>

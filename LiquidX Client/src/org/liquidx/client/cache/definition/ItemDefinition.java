@@ -88,12 +88,21 @@ public final class ItemDefinition {
 				}
 			}
 		}
+		if (itemDef.modifiedModelColors2 != null) {
+			for (int i2 = 0; i2 < itemDef.modifiedModelColors.length; i2++) {
+				if (itemDef.originalModelColors[i2] == 0) {
+					itemDef.originalModelColors[i2] = 1;
+				}
+			}
+		}
 
 		for (int a : BLACK_FIX) {
 			if (itemDef.id == a) {
 				itemDef.modifiedModelColors = new int[1];
+				itemDef.modifiedModelColors2 = new int[1];
 				itemDef.originalModelColors = new int[1];
 				itemDef.modifiedModelColors[0] = 0;
+				itemDef.modifiedModelColors2[0] = 0;
 				itemDef.originalModelColors[0] = 1;
 			}
 		}
@@ -534,17 +543,26 @@ public final class ItemDefinition {
 				itemDef.maleWearId = 71;
 				itemDef.femaleWearId = 71;
 				break;
+			case 1157:
+				itemDef.name = "Starter helm";
+				itemDef.modelID = 70;
+				itemDef.maleWearId = 71;
+				itemDef.femaleWearId = 71;
+				itemDef.recolor2 = 6500;
+				break;
 			case 1115:
 				itemDef.name = "Starter platebody";
 				itemDef.modelID = 72;
 				itemDef.maleWearId = 73;
 				itemDef.femaleWearId = 73;
-				itemDef.originalModelColors = new int [1];
-				itemDef.modifiedModelColors = new int [1];
-				itemDef.modifiedModelColors2 = new int [1];
-				itemDef.originalModelColors[0] = 999; //green
-				itemDef.modifiedModelColors[0] = 0; //green
-				itemDef.modifiedModelColors2[0] = 30000; //green
+				break;
+
+			case 1119:
+				itemDef.name = "[U] Starter platebody";
+				itemDef.modelID = 72;
+				itemDef.maleWearId = 73;
+				itemDef.femaleWearId = 73;
+				itemDef.recolor2 = 6500;
 				break;
 
 			case 1067:
@@ -553,18 +571,31 @@ public final class ItemDefinition {
 				itemDef.maleWearId = 75;
 				itemDef.femaleWearId = 75;
 				break;
+
+			case 1069:
+				itemDef.name = "[U] Starter platelegs";
+				itemDef.modelID = 74;
+				itemDef.maleWearId = 75;
+				itemDef.femaleWearId = 75;
+				itemDef.recolor2 = 6500;
+				break;
+
 			case 1323:
 				itemDef.name = "Starter Axe";
 				itemDef.modelID = 60;
 				itemDef.maleWearId = 61;
 				itemDef.femaleWearId = 61;
-				itemDef.modifiedModelColors = new int [1];
-				itemDef.originalModelColors = new int [1];
-				itemDef.originalModelColors[0] = 71; //green
-				itemDef.modifiedModelColors[0] = 60;
 				break;
 
-		case 14024:
+			case 1325:
+				itemDef.name = "[U] Starter Axe";
+				itemDef.modelID = 60;
+				itemDef.maleWearId = 61;
+				itemDef.femaleWearId = 61;
+				itemDef.recolor2 = 6500;
+				break;
+
+			case 14024:
 			itemDef.modelID = 94487;
 			itemDef.name = "Drygore Rapier";
 			itemDef.description = "A powerful rapier made from the chitlin of the Kalphite King.".getBytes();		
@@ -3671,6 +3702,9 @@ public final class ItemDefinition {
 	public int modelZoom;
 	int[] modifiedModelColors;
 	int[] modifiedModelColors2;
+	Integer recolor1;
+	Integer recolor2;
+	Integer recolor3;
 	public String name;
 	int[] originalModelColors;
 	public boolean stackable;
@@ -3721,6 +3755,15 @@ public final class ItemDefinition {
 			for (int l = 0; l < modifiedModelColors.length; l++) {
 				model.method476(modifiedModelColors[l], originalModelColors[l]);
 			}
+		}
+		if(recolor1 != null) {
+			model.method1337(recolor1);
+		}
+		if(recolor2 !=null) {
+			model.method1338(recolor2);
+		}
+		if(recolor3 !=null) {
+			model.method1339(recolor3);
 		}
 
 		model.light(64 + anInt196, 768 + anInt184, -50, -10, -50, true);
@@ -3784,6 +3827,15 @@ public final class ItemDefinition {
 			for (l = 0; l < modifiedModelColors.length; l++) {
 				model.method476(modifiedModelColors[l], originalModelColors[l]);
 			}
+		}
+		if(recolor1 !=null) {
+			model.method1337(recolor1);
+		}
+		if(recolor2 !=null) {
+			model.method1338(recolor2);
+		}
+		if(recolor3 !=null) {
+			model.method1339(recolor3);
 		}
 
 
@@ -3852,14 +3904,6 @@ public final class ItemDefinition {
 			}
 		}
 
-		if (i == 0 && (maleWieldX != 0 || maleWieldY != 0 || maleWieldZ != 0)) {
-			model.translate(maleWieldX, maleWieldY, maleWieldZ);
-		}
-
-		if (i == 1 && (femaleWieldX != 0 || femaleWieldY != 0 || femaleWieldZ != 0)) {
-			model.translate(femaleWieldX, femaleWieldY, femaleWieldZ);
-		}
-
 		if (modifiedModelColors2 != null) {
 			for (l = 0; l < modifiedModelColors.length; l++) {
 				model.method476(modifiedModelColors[l],modifiedModelColors2[l], originalModelColors[l]);
@@ -3869,7 +3913,23 @@ public final class ItemDefinition {
 				model.method476(modifiedModelColors[l], originalModelColors[l]);
 			}
 		}
+		if(recolor1 !=null) {
+			model.method1337(recolor1);
+		}
+		if(recolor2 !=null) {
+			model.method1338(recolor2);
+		}
+		if(recolor3 !=null) {
+			model.method1339(recolor3);
+		}
 
+		if (i == 0 && (maleWieldX != 0 || maleWieldY != 0 || maleWieldZ != 0)) {
+			model.translate(maleWieldX, maleWieldY, maleWieldZ);
+		}
+
+		if (i == 1 && (femaleWieldX != 0 || femaleWieldY != 0 || femaleWieldZ != 0)) {
+			model.translate(femaleWieldX, femaleWieldY, femaleWieldZ);
+		}
 
 		return model;
 	}
@@ -3894,7 +3954,6 @@ public final class ItemDefinition {
 		if (model == null) {
 			return null;
 		}
-
 		if (modifiedModelColors2 != null) {
 			for (int l = 0; l < modifiedModelColors.length; l++) {
 				model.method476(modifiedModelColors[l],modifiedModelColors2[l], originalModelColors[l]);
@@ -3902,6 +3961,15 @@ public final class ItemDefinition {
 		} else if (modifiedModelColors != null) {
 			for (int l = 0; l < modifiedModelColors.length; l++) {
 				model.method476(modifiedModelColors[l], originalModelColors[l]);
+			}
+			if(recolor1 !=null) {
+				model.method1337(recolor1);
+			}
+			if(recolor2 !=null) {
+				model.method1338(recolor2);
+			}
+			if(recolor3 !=null) {
+				model.method1339(recolor3);
 			}
 		}
 
@@ -4048,6 +4116,9 @@ public final class ItemDefinition {
 		originalModelColors = null;
 		modifiedModelColors = null;
 		modifiedModelColors2 = null;
+		recolor1 = null;
+		recolor2 = null;
+		recolor3 = null;
 		modelZoom = 2000;
 		modelRotation1 = 0;
 		modelRotation2 = 0;
@@ -4117,6 +4188,9 @@ public final class ItemDefinition {
 		anInt162 = definition.anInt162;
 		modifiedModelColors = definition.modifiedModelColors;
 		modifiedModelColors2 = definition.modifiedModelColors2;
+		recolor1 = definition.recolor1;
+		recolor2 = definition.recolor2;
+		recolor3 = definition.recolor3;
 		team = definition.team;
 
 		if (definition.actions != null) {
@@ -4139,6 +4213,9 @@ public final class ItemDefinition {
 		modelOffsetY = definition.modelOffsetY;
 		modifiedModelColors = definition.modifiedModelColors;
 		modifiedModelColors2 = definition.modifiedModelColors2;
+		recolor1 = definition.recolor1;
+		recolor2 = definition.recolor2;
+		recolor3 = definition.recolor3;
 		originalModelColors = definition.originalModelColors;
 		definition = get(certID);
 		name = definition.name;
