@@ -1267,6 +1267,13 @@ public class Model extends Animable {
 			}
 		}
 	}
+	public void method476(int i,int i2, int j) {
+		for (int k = 0; k < anInt1630; k++) {
+			if (anIntArray1640[k] >= i && anIntArray1640[k] <= i2)  {
+				anIntArray1640[k] = j;
+			}
+		}
+	}
 
 	public void method477() {
 		for (int j = 0; j < numberOfVerticeCoordinates; j++) {

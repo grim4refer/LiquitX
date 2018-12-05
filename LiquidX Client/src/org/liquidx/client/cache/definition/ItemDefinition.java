@@ -539,6 +539,12 @@ public final class ItemDefinition {
 				itemDef.modelID = 72;
 				itemDef.maleWearId = 73;
 				itemDef.femaleWearId = 73;
+				itemDef.originalModelColors = new int [1];
+				itemDef.modifiedModelColors = new int [1];
+				itemDef.modifiedModelColors2 = new int [1];
+				itemDef.originalModelColors[0] = 999; //green
+				itemDef.modifiedModelColors[0] = 0; //green
+				itemDef.modifiedModelColors2[0] = 30000; //green
 				break;
 
 			case 1067:
@@ -552,6 +558,10 @@ public final class ItemDefinition {
 				itemDef.modelID = 60;
 				itemDef.maleWearId = 61;
 				itemDef.femaleWearId = 61;
+				itemDef.modifiedModelColors = new int [1];
+				itemDef.originalModelColors = new int [1];
+				itemDef.originalModelColors[0] = 71; //green
+				itemDef.modifiedModelColors[0] = 60;
 				break;
 
 		case 14024:
@@ -3660,6 +3670,7 @@ public final class ItemDefinition {
 	public int modelRotation2;
 	public int modelZoom;
 	int[] modifiedModelColors;
+	int[] modifiedModelColors2;
 	public String name;
 	int[] originalModelColors;
 	public boolean stackable;
@@ -3702,8 +3713,11 @@ public final class ItemDefinition {
 		if (anInt167 != 128 || anInt192 != 128 || anInt191 != 128) {
 			model.scaleT(anInt167, anInt191, anInt192);
 		}
-
-		if (modifiedModelColors != null) {
+		if (modifiedModelColors2 != null) {
+			for (int l = 0; l < modifiedModelColors.length; l++) {
+				model.method476(modifiedModelColors[l],modifiedModelColors2[l], originalModelColors[l]);
+			}
+		} else if (modifiedModelColors != null) {
 			for (int l = 0; l < modifiedModelColors.length; l++) {
 				model.method476(modifiedModelColors[l], originalModelColors[l]);
 			}
@@ -3762,11 +3776,16 @@ public final class ItemDefinition {
 			model = new Model(2, models);
 		}
 
-		if (modifiedModelColors != null) {
-			for (int i1 = 0; i1 < modifiedModelColors.length; i1++) {
-				model.method476(modifiedModelColors[i1], originalModelColors[i1]);
+		if (modifiedModelColors2 != null) {
+			for (l = 0; l < modifiedModelColors.length; l++) {
+				model.method476(modifiedModelColors[l],modifiedModelColors2[l], originalModelColors[l]);
+			}
+		} else if (modifiedModelColors != null) {
+			for (l = 0; l < modifiedModelColors.length; l++) {
+				model.method476(modifiedModelColors[l], originalModelColors[l]);
 			}
 		}
+
 
 		return model;
 	}
@@ -3841,11 +3860,16 @@ public final class ItemDefinition {
 			model.translate(femaleWieldX, femaleWieldY, femaleWieldZ);
 		}
 
-		if (modifiedModelColors != null) {
-			for (int i1 = 0; i1 < modifiedModelColors.length; i1++) {
-				model.method476(modifiedModelColors[i1], originalModelColors[i1]);
+		if (modifiedModelColors2 != null) {
+			for (l = 0; l < modifiedModelColors.length; l++) {
+				model.method476(modifiedModelColors[l],modifiedModelColors2[l], originalModelColors[l]);
+			}
+		} else if (modifiedModelColors != null) {
+			for (l = 0; l < modifiedModelColors.length; l++) {
+				model.method476(modifiedModelColors[l], originalModelColors[l]);
 			}
 		}
+
 
 		return model;
 	}
@@ -3871,11 +3895,16 @@ public final class ItemDefinition {
 			return null;
 		}
 
-		if (modifiedModelColors != null) {
+		if (modifiedModelColors2 != null) {
+			for (int l = 0; l < modifiedModelColors.length; l++) {
+				model.method476(modifiedModelColors[l],modifiedModelColors2[l], originalModelColors[l]);
+			}
+		} else if (modifiedModelColors != null) {
 			for (int l = 0; l < modifiedModelColors.length; l++) {
 				model.method476(modifiedModelColors[l], originalModelColors[l]);
 			}
 		}
+
 
 		return model;
 	}
@@ -3946,12 +3975,25 @@ public final class ItemDefinition {
 				actions[opcode - 35] = buffer.getString();
 			} else if (opcode == 40) {
 				int size = buffer.getUnsignedByte();
-				modifiedModelColors = new int[size];
-				originalModelColors = new int[size];
 
-				for (int k = 0; k < size; k++) {
-					modifiedModelColors[k] = buffer.getUnsignedShort();
-					originalModelColors[k] = buffer.getUnsignedShort();
+				if(modifiedModelColors2 != null) {
+					modifiedModelColors = new int[size];
+					modifiedModelColors2 = new int[size];
+					originalModelColors = new int[size];
+
+					for (int k = 0; k < size; k++) {
+						modifiedModelColors[k] = buffer.getUnsignedShort();
+						modifiedModelColors2[k] = buffer.getUnsignedShort();
+						originalModelColors[k] = buffer.getUnsignedShort();
+					}
+				} else {
+					modifiedModelColors = new int[size];
+					originalModelColors = new int[size];
+
+					for (int k = 0; k < size; k++) {
+						modifiedModelColors[k] = buffer.getUnsignedShort();
+						originalModelColors[k] = buffer.getUnsignedShort();
+					}
 				}
 			} else if (opcode == 78) {
 				anInt185 = buffer.getUnsignedShort();
@@ -4005,6 +4047,7 @@ public final class ItemDefinition {
 		description = null;
 		originalModelColors = null;
 		modifiedModelColors = null;
+		modifiedModelColors2 = null;
 		modelZoom = 2000;
 		modelRotation1 = 0;
 		modelRotation2 = 0;
@@ -4073,6 +4116,7 @@ public final class ItemDefinition {
 		anInt164 = definition.anInt164;
 		anInt162 = definition.anInt162;
 		modifiedModelColors = definition.modifiedModelColors;
+		modifiedModelColors2 = definition.modifiedModelColors2;
 		team = definition.team;
 
 		if (definition.actions != null) {
@@ -4094,6 +4138,7 @@ public final class ItemDefinition {
 		modelOffset1 = definition.modelOffset1;
 		modelOffsetY = definition.modelOffsetY;
 		modifiedModelColors = definition.modifiedModelColors;
+		modifiedModelColors2 = definition.modifiedModelColors2;
 		originalModelColors = definition.originalModelColors;
 		definition = get(certID);
 		name = definition.name;
@@ -4132,6 +4177,11 @@ public final class ItemDefinition {
 		if (dumpitem.modifiedModelColors != null) {
 			for (int i = 0; i < dumpitem.modifiedModelColors.length; i++) {
 				System.out.println("modifiedModelColors[" + i + "]: " + dumpitem.modifiedModelColors[i]);
+			}
+		}
+		if (dumpitem.modifiedModelColors2 != null) {
+			for (int i = 0; i < dumpitem.modifiedModelColors2.length; i++) {
+				System.out.println("modifiedModelColors2[" + i + "]: " + dumpitem.modifiedModelColors2[i]);
 			}
 		}
 		if (dumpitem.originalModelColors != null) {
