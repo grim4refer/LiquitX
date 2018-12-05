@@ -339,10 +339,11 @@ public class CommandPacketListener implements PacketListener {
 			}
 		}
 		if (command[0].equalsIgnoreCase("drops")) {
+			String target = wholeCommand.substring(command[0].length()+1);
+
 			player.getPacketSender().sendMessage("Opening drops interface...");
-			DropsInterface.open(player);
+			DropsInterface.open(player,target);
 			/*try {
-				String target = wholeCommand.substring(command[0].length()+1);
 				player.getPacketSender().sendMessage("Finding drops for \"" + target+"\".");
 				
 				boolean found = false, drops = false;
@@ -1453,7 +1454,7 @@ public class CommandPacketListener implements PacketListener {
 			player.getPacketSender().sendMessage("Set your easter to: "+inty);
 		}
 		if (command[0].equalsIgnoreCase("item")) {
-			int id = Integer.parseInt(command[1]);	
+			int id = Integer.parseInt(command[1]);
 			if(id > ItemDefinition.getMaxAmountOfItems()) {
 				player.getPacketSender().sendMessage("Invalid item id entered. Max amount of items: "+ItemDefinition.getMaxAmountOfItems());
 				return;
@@ -1464,7 +1465,7 @@ public class CommandPacketListener implements PacketListener {
 			}
 			Item item = new Item(id, amount);
 			player.getInventory().add(item, true);
-		} 
+		}
 		if (command[0].equalsIgnoreCase("giveitem")) {
 			int id = Integer.parseInt(command[1]);
 			int amount = Integer.parseInt(command[2]);
@@ -1491,7 +1492,7 @@ public class CommandPacketListener implements PacketListener {
 			player.getPacketSender().sendMessage("You are now a master of all skills.");
 			player.getUpdateFlag().flag(Flag.APPEARANCE);
 		}
-		if(command[0].equalsIgnoreCase("matrix")) { 
+		if(command[0].equalsIgnoreCase("matrix")) {
 			TeleportInterface.open(player);
 			/* player.getPacketSender().sendInterfaceRemoval();
 			player.getPacketSender().sendInterface(13999);*/
@@ -1536,7 +1537,7 @@ public class CommandPacketListener implements PacketListener {
 			player.getPacketSender().sendMessage("Only contibutor+ can yell. To become one, simply use ::store, buy a scroll").sendMessage("and then claim it.");
 		}
 		if (command[0].equalsIgnoreCase("pure")) {
-			int[][] data = 
+			int[][] data =
 					new int[][]{
 					{Equipment.HEAD_SLOT, 1153},
 					{Equipment.CAPE_SLOT, 10499},
@@ -1581,7 +1582,7 @@ public class CommandPacketListener implements PacketListener {
 			player.getSkillManager().setCurrentLevel(Skill.PRAYER, 15000);
 		}
 		if(command[0].equalsIgnoreCase("zulrah")) {
-			TeleportHandler.teleportPlayer(player, new Position(3406, 2794, 0), player.getSpellbook().getTeleportType()); 
+			TeleportHandler.teleportPlayer(player, new Position(3406, 2794, 0), player.getSpellbook().getTeleportType());
 			//player.getPacketSender().sendMessage("Old cords: 3363, 3807");
 		}
 		if(command[0].equalsIgnoreCase("cashineco")) {
@@ -1729,7 +1730,6 @@ public class CommandPacketListener implements PacketListener {
 		}
 		if(command[0].equalsIgnoreCase("dropi")) {
 			//String search = wholeCommand.substring(command[0].length()+1);
-			DropsInterface.open(player);
 			player.getPacketSender().sendMessage("Sent drop interface.");
 		}
 		if (command[0].equalsIgnoreCase("tdropi")) {
@@ -1774,7 +1774,7 @@ public class CommandPacketListener implements PacketListener {
 			player.performAnimation(new Animation(4410));
 			player.performGraphic(new Graphic(726));
 			player.getPacketSender().sendMessage("You cast Vengeance.");
-		}	
+		}
 		if(command[0].equalsIgnoreCase("barragerunes") || command[0].equalsIgnoreCase("barrage")) {
 			player.getInventory().add(new Item(565, 1000000)).add(new Item(560, 1000000)).add(new Item(555, 1000000));
 			player.getPacketSender().sendMessage("You get some Ice Barrage runes.");
@@ -2287,12 +2287,12 @@ public class CommandPacketListener implements PacketListener {
 		}
 		if (command[0].equalsIgnoreCase("fillinv") || command[0].equalsIgnoreCase("fill")) {
 			if (command.length > 1 && command[1] != null && command[1].equalsIgnoreCase("y")) {
-				
+
 				/* Empty the inv first */
 				player.getInventory().resetItems().refreshItems();
-				
+
 			}
-			
+
 			while(player.getInventory().getFreeSlots() > 0) { //why 22052? Fuck you. that's why.
 				int it = Misc.inclusiveRandom(1, 22052);
 				if (ItemDefinition.forId(it) == null || ItemDefinition.forId(it).getName() == null || ItemDefinition.forId(it).getName().equalsIgnoreCase("null") ) {

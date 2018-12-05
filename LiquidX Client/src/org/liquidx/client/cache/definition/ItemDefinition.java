@@ -544,7 +544,7 @@ public final class ItemDefinition {
 				itemDef.femaleWearId = 71;
 				break;
 			case 1157:
-				itemDef.name = "Starter helm";
+				itemDef.name = "[U]Starter helm";
 				itemDef.modelID = 70;
 				itemDef.maleWearId = 71;
 				itemDef.femaleWearId = 71;

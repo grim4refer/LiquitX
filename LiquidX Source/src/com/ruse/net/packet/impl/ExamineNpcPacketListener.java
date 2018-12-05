@@ -3,6 +3,7 @@ package com.ruse.net.packet.impl;
 import com.ruse.model.definitions.NpcDefinition;
 import com.ruse.net.packet.Packet;
 import com.ruse.net.packet.PacketListener;
+import com.ruse.world.content.DropsInterface;
 import com.ruse.world.entity.impl.player.Player;
 
 public class ExamineNpcPacketListener implements PacketListener {
@@ -16,6 +17,8 @@ public class ExamineNpcPacketListener implements PacketListener {
 		NpcDefinition npcDef = NpcDefinition.forId(npc);
 		if(npcDef != null) {
 			player.getPacketSender().sendMessage(npcDef.getExamine());
+			DropsInterface.open(player,npcDef.getName());
+
 		}
 	}
 

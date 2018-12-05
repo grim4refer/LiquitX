@@ -151,16 +151,19 @@ public class DropsInterface {
 		}
 	}
 	
-	public static void open(Player player) {
+	public static void open(Player player, String npcName) {
 		//resetInterface(player);
 		resetRight(player);
+
+		handleSearchInput(player, npcName);
+
 		if (player.getLootList() != null) {
 			populateNpcOptions(player);
 		} else {
 			resetLeft(player);
+
 		}
 		player.getPacketSender().sendInterface(INTERFACE_ID);
-		//List<Integer> list = getList(search);
 	}
 	
 	public static List<Integer> getList(String search) {
