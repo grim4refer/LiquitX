@@ -48,6 +48,7 @@ public class upgradeable {
             }
             return false;
         }
+
         public static checkItem(Player p) {
             for(UpgItem item : UpgItem.values()){
                     for (int i = 0; i < item.startItem; i++) {
