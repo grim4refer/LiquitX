@@ -31,9 +31,6 @@ public final class ItemDefinition {
     public static void applyTexturing(Model model, int id) {
         switch (id) {
 
-            case 1153:
-               model.setTexture(60);
-               break;
         }
     }
 

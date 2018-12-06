@@ -163,8 +163,8 @@ public class UseItemPacketListener implements PacketListener {
 		final int objectX = packet.readLEShortA();
 		final int itemId = packet.readShort();
 
-		if(itemId == 1153 && objectId == 9390) {
-			upgradeable.init(player);
+		if(itemId == upgradeable.UpgItem.checkItem(player, itemId) && objectId == 9390) {
+			upgradeable.init(player, itemId);
 			return;
 		}
 

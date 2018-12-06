@@ -70940,15 +70940,15 @@
 "poisonous": false,
 "respawn": 10,
 "maxHit": 1,
-"hitpoints": 5000,
+"hitpoints": 15000,
 "attackSpeed": 4,
 "attackAnim": 422,
 "defenceAnim": 404,
-"deathAnim": 2304,
+"deathAnim": 2304,g
 "attackBonus": 9,
-"defenceMelee": 9,
-"defenceRange": 9,
-"defenceMage": 0
+"defenceMelee": 59,
+"defenceRange": 59,
+"defenceMage": 50
 },
 {
 "id": 3223,

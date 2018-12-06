@@ -15,20 +15,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Model.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/world/Model.java">
+      <file leaf-file-name="ItemDefinition.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ItemDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8430">
-              <caret line="187" lean-forward="true" selection-start-line="187" selection-end-line="187" />
+            <state relative-caret-position="163">
+              <caret line="553" column="22" selection-start-line="553" selection-start-column="17" selection-end-line="553" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Unzip.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/Unzip.java">
+      <file leaf-file-name="CustomObjects.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/world/CustomObjects.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="308">
+              <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Thread.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="746" column="5" selection-start-line="746" selection-start-column="5" selection-end-line="746" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/world/Model.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="2622" column="34" selection-start-line="2622" selection-start-column="34" selection-end-line="2622" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -36,8 +54,8 @@
       <file leaf-file-name="ObjectDefinition.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ObjectDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="880" column="30" selection-start-line="880" selection-start-column="30" selection-end-line="880" selection-end-column="30" />
+            <state relative-caret-position="-10">
+              <caret line="869" column="4" selection-start-line="869" selection-start-column="4" selection-end-line="869" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -46,9 +64,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>readUnsignedByte</find>
-      <find>vertexSkin[]</find>
-      <find>applytr</find>
       <find>= model.</find>
       <find>read662</find>
       <find>getUnsignedByte</find>
@@ -76,6 +91,9 @@
       <find>readold</find>
       <find>setTe</find>
       <find>set2 += 4;</find>
+      <find>upgrade</find>
+      <find>read66</find>
+      <find>starter</find>
     </findStrings>
     <replaceStrings>
       <replace>texture_edge_a</replace>
@@ -128,10 +146,11 @@
         <option value="$PROJECT_DIR$/src/org/liquidx/client/io/Buffer.java" />
         <option value="$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ObjectDefinition.java" />
         <option value="$PROJECT_DIR$/src/org/liquidx/client/Client.java" />
-        <option value="$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ItemDefinition.java" />
         <option value="$PROJECT_DIR$/src/org/liquidx/client/WrappedByteBuffer.java" />
         <option value="$USER_HOME$/Downloads/DsClient 2/com/dreamscape/Model.java" />
         <option value="$PROJECT_DIR$/src/org/liquidx/client/world/Model.java" />
+        <option value="$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ItemDefinition.java" />
+        <option value="$PROJECT_DIR$/src/org/liquidx/client/world/CustomObjects.java" />
       </list>
     </option>
   </component>
@@ -442,20 +461,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ObjectDefinition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="880" column="30" selection-start-line="880" selection-start-column="30" selection-end-line="880" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ItemDefinition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/WrappedByteBuffer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1365">
@@ -470,6 +475,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Downloads/ImpunityXSource/src/com/ImpunityX/world/content/combat/magic/CustomMagicStaff.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-52">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ObjectDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="880" column="30" selection-start-line="880" selection-start-column="30" selection-end-line="880" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ItemDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="556" column="22" selection-start-line="556" selection-start-column="17" selection-end-line="556" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="746" column="5" selection-start-line="746" selection-start-column="5" selection-end-line="746" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/world/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="2637" column="37" lean-forward="true" selection-start-line="2637" selection-start-column="37" selection-end-line="2637" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/Unzip.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -477,10 +517,107 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ItemDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8715">
+          <caret line="581" lean-forward="true" selection-start-line="581" selection-end-line="581" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/world/Model.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8430">
-          <caret line="187" lean-forward="true" selection-start-line="187" selection-end-line="187" />
+        <state relative-caret-position="19245">
+          <caret line="1283" column="26" selection-start-line="1283" selection-start-column="16" selection-end-line="1283" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/io/Buffer.java" />
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/graphics/gameframe/GameFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/GameRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="1033" column="24" selection-start-line="1033" selection-start-column="24" selection-end-line="1033" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/entity/player/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="176" column="14" selection-start-line="176" selection-start-column="14" selection-end-line="176" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/graphics/gameframe/impl/TabArea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="346" selection-start-line="346" selection-end-line="346" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/RSInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="1991" column="51" lean-forward="true" selection-start-line="1991" selection-start-column="51" selection-end-line="1991" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/io/Buffer.java" />
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="11090" column="24" selection-start-line="11090" selection-start-column="24" selection-end-line="11090" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/WrappedByteBuffer.java" />
+    <entry file="file://$USER_HOME$/Downloads/DsClient 2/com/dreamscape/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/Unzip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" lean-forward="true" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/world/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="2622" column="34" selection-start-line="2622" selection-start-column="34" selection-end-line="2622" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ObjectDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="869" column="4" selection-start-line="869" selection-start-column="4" selection-end-line="869" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ItemDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="553" column="22" selection-start-line="553" selection-start-column="17" selection-end-line="553" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/world/CustomObjects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
         </state>
       </provider>
     </entry>

@@ -1,5 +1,7 @@
 package com.ruse.world.content.upgrade;
 
+import com.ruse.model.definitions.ItemDefinition;
+import com.ruse.util.Misc;
 import com.ruse.world.World;
 import com.ruse.world.entity.impl.player.Player;
 
@@ -7,7 +9,7 @@ public class upgradeable {
 
 
     public static enum UpgItem {
-        STARTER_HELM(1153, new int[]{17415}, 75, 1157);
+        STARTER_HELM(1153, new int[]{17415}, 2, 1157);
 
         private int[] reqItem;
         private int startItem;
@@ -37,38 +39,78 @@ public class upgradeable {
             return this.EndItem;
         }
 
-        public static boolean checkReq(Player p) { //test it and let me see
+        public static boolean checkReq(Player p, int itemId) { //test it and let me see
             for (UpgItem item : UpgItem.values()) {
-                if (item.reqItem != null) {
-                    for (int i = 0; i < item.getStartItem(); i++) {
-                        if (p.getInventory().contains(item.reqItem[i]))
+                if (item.startItem == itemId) {
+                    for (int i = 0; i < item.getReqItem().length; i++) {
+                        if (p.getInventory().contains(item.reqItem[i])) {
+                            p.getInventory().delete(item.reqItem[i], 1);
                             return true;
+                        } else {
+                            return false;
+                        }
                     }
                 }
             }
             return false;
         }
 
-        public static checkItem(Player p) {
-            for(UpgItem item : UpgItem.values()){
-                    for (int i = 0; i < item.startItem; i++) {
-                        if (p.getInventory().contains(item.startItem)) {
-                            return item.startItem;
-                        }
-                    }
+        public static int getRandom(int itemId) {
+            for (UpgItem item : UpgItem.values()) {
+                if (item.startItem == itemId) {
+                    return item.chance;
+                }
             }
+            return 0;
         }
-     }
 
-
-        public static void init(Player p) {
-            if (UpgItem.checkReq(p)) {
-                World.sendMessage("GG");
-            } else {
-                World.sendMessage("Better Luck next time");
+        public static int addEndItem(int itemId) {
+            for (UpgItem item : UpgItem.values()) {
+                if (item.startItem == itemId) {
+                    return item.EndItem;
+                }
             }
+            return 0;
         }
-        public static void getItems() {
 
+        public static int checkItem(Player p, int itemId) {
+            for (UpgItem item : UpgItem.values()) {
+
+                if (item.startItem == itemId) {
+                    return itemId;
+                } else {
+                    p.getPacketSender().sendMessage("This item can't be upgraded!");
+                }
+            }
+            return 0;
         }
     }
+
+
+    public static void init(Player p, int itemId) {
+        if (UpgItem.checkReq(p, itemId)) {
+            int random = Misc.getRandom(UpgItem.getRandom(itemId));
+            if (random == 0) {
+                p.getPacketSender().sendMessage("" + random);
+                p.getPacketSender().sendMessage("@gr2@[Succesfull] @bla@You have upgraded your@gr2@" + ItemDefinition.forId(itemId).getName());
+                    p.getInventory().delete(itemId, 1);
+                    p.getInventory().add(UpgItem.addEndItem(itemId), 1);
+            } else {
+                p.getPacketSender().sendMessage("@red@[Failed] @bla@You have failed to Upgrade your @red@" + ItemDefinition.forId(itemId).getName());
+                p.getPacketSender().sendMessage("" + random);
+                if(ItemDefinition.forId(itemId).getName().contains("Starter")){
+                    p.getPacketSender().sendMessage("@red@ Starter gear can't break!");
+                } else {
+                    p.getInventory().delete(itemId, 1);
+                    p.getInventory().add(UpgItem.addEndItem(itemId), 1);
+                }
+            }
+        } else {
+            World.sendMessage("You don't have the Requirements to upgrade a @or3@" + ItemDefinition.forId(itemId).getName());
+        }
+    }
+
+    public static void getItems() {
+
+    }
+}
