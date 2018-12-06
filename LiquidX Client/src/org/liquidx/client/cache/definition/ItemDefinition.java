@@ -554,6 +554,11 @@ public final class ItemDefinition {
 				itemDef.maleWearId = 71;
 				itemDef.femaleWearId = 71;
 				break;
+			case 17415:
+				itemDef.name = "Starter gear upgrade stone";
+				itemDef.recolor1 = 97000;
+				itemDef.actions[1] = null;
+				break;
 			case 1157:
 				itemDef.name = "[U]Starter helm";
 				itemDef.modelID = 70;

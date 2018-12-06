@@ -65,8 +65,8 @@ public interface CombatStrategy {
      *
      * @return the weakness from the entity
      */
-    public Weakness getWeakness();
-    
+    //public Weakness getWeakness();
+
     public CombatType getCombatType();
 
 }

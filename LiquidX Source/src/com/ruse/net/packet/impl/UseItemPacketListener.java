@@ -51,6 +51,7 @@ import com.ruse.world.content.skill.impl.slayer.SlayerDialogues;
 import com.ruse.world.content.skill.impl.slayer.SlayerTasks;
 import com.ruse.world.content.skill.impl.smithing.EquipmentMaking;
 import com.ruse.world.content.skill.impl.smithing.Smelting;
+import com.ruse.world.content.upgrade.upgradeable;
 import com.ruse.world.entity.impl.npc.NPC;
 import com.ruse.world.entity.impl.player.Player;
 
@@ -161,7 +162,12 @@ public class UseItemPacketListener implements PacketListener {
 		final int itemSlot = packet.readLEShort();
 		final int objectX = packet.readLEShortA();
 		final int itemId = packet.readShort();
-		
+
+		if(itemId == 1153 && objectId == 9390) {
+			upgradeable.init(player);
+			return;
+		}
+
 		if (itemSlot < 0 || itemSlot > player.getInventory().capacity())
 			return;
 		final Item item = player.getInventory().getItems()[itemSlot];
@@ -190,6 +196,8 @@ public class UseItemPacketListener implements PacketListener {
 					Cooking.selectionInterface(player, CookingData.forFish(item.getId()));
 					return;
 				}
+
+
 				if (Prayer.isBone(itemId) && objectId == 409) {
 					BonesOnAltar.openInterface(
 							player, itemId);
@@ -264,6 +272,7 @@ public class UseItemPacketListener implements PacketListener {
 						Flax.showSpinInterface(player);
 					}
 					break;
+
 				case 6189:
 				case 11666:
 					Jewelry.jewelryInterface(player);
