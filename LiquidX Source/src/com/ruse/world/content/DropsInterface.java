@@ -139,9 +139,11 @@ public class DropsInterface {
 	
 	public static void handleSearchInput(Player player, String syntax) {
 		player.getPacketSender().sendClientRightClickRemoval();
+
 		//System.out.println("Searching for "+syntax);
-		List<Integer> list = getList(syntax);
 		player.getPacketSender().sendString(SEARCHED_STRING, "@whi@"+syntax);
+		List<Integer> list = getList(syntax);
+
 		if (!list.isEmpty()) {
 			player.setLootList(list);
 			populateNpcOptions(player);
@@ -149,20 +151,24 @@ public class DropsInterface {
 			player.getPacketSender().sendMessage("No results found, please refine your NPC search.");
 			return;
 		}
+
+
 	}
 	
-	public static void open(Player player, String npcName) {
+	public static void open(Player player, int npcID) {
 		//resetInterface(player);
+		NpcDefinition npcDef = NpcDefinition.forId(npcID);
+
 		resetRight(player);
+		List<Integer> list = getList(npcDef.getName());
 
-		handleSearchInput(player, npcName);
+		populateNpcOptions(player);
 
-		if (player.getLootList() != null) {
-			populateNpcOptions(player);
-		} else {
-			resetLeft(player);
 
-		}
+		handleSearchInput(player, npcDef.getName());
+		SearchedNpcButton(32528);
+		handleButtonClick(player,npcID);
+
 		player.getPacketSender().sendInterface(INTERFACE_ID);
 	}
 	

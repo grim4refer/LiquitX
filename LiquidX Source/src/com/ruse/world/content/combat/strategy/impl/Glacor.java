@@ -10,12 +10,17 @@ import com.ruse.util.Misc;
 import com.ruse.world.content.combat.CombatContainer;
 import com.ruse.world.content.combat.CombatType;
 import com.ruse.world.content.combat.strategy.CombatStrategy;
+import com.ruse.world.content.combat.strategy.Weakness;
 import com.ruse.world.entity.impl.Character;
 import com.ruse.world.entity.impl.npc.NPC;
 
 public class Glacor implements CombatStrategy {
 
 
+	@Override
+	public Weakness getWeakness() {
+		return Weakness.FIRE;
+	}
 	@Override
 	public boolean canAttack(Character entity, Character victim) {
 		return true;

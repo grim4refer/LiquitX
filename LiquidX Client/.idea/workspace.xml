@@ -15,38 +15,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ItemDefinition.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ItemDefinition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="595" column="22" selection-start-line="595" selection-start-column="22" selection-end-line="595" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RSInterface.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/RSInterface.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-29491">
-              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Model.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/world/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19110">
-              <caret line="1283" column="26" selection-start-line="1283" selection-start-column="16" selection-end-line="1283" selection-end-column="26" />
+            <state relative-caret-position="-8430">
+              <caret line="187" lean-forward="true" selection-start-line="187" selection-end-line="187" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ByteBuffer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/io/ByteBuffer.java">
+      <file leaf-file-name="Unzip.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/Unzip.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6390">
-              <caret line="456" selection-start-line="456" selection-end-line="456" />
+            <state relative-caret-position="165">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ObjectDefinition.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ObjectDefinition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="880" column="30" selection-start-line="880" selection-start-column="30" selection-end-line="880" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -55,29 +46,73 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>origin</find>
-      <find>if (modifiedModelColors2 != null) {</find>
-      <find>method476</find>
-      <find>if (modi</find>
-      <find>originalModelColors</find>
-      <find>modif</find>
-      <find>modifiedModelColors.length;</find>
-      <find>model.method476(modifiedModelColors[l</find>
-      <find>start</find>
-      <find>modifiedModelColors2</find>
-      <find>public Model get</find>
-      <find>public Model</find>
-      <find>starter</find>
-      <find>moti</find>
-      <find>modifiedModelColors</find>
-      <find>recolour1</find>
-      <find>recolor1 =</find>
-      <find>1115</find>
-      <find>interface</find>
+      <find>readUnsignedByte</find>
+      <find>vertexSkin[]</find>
+      <find>applytr</find>
+      <find>= model.</find>
+      <find>read662</find>
+      <find>getUnsignedByte</find>
+      <find>getByte</find>
+      <find>getByte(</find>
+      <find>getUnsignedShort</find>
+      <find>newformat</find>
+      <find>read622</find>
+      <find>newmodel</find>
+      <find>decode</find>
+      <find>numTextureTriangles</find>
+      <find>anInt371</find>
+      <find>model.</find>
+      <find>version</find>
+      <find>vertexCount</find>
+      <find>vertexcount</find>
+      <find>numUVCoords</find>
+      <find>vertexX</find>
+      <find>read6</find>
+      <find>vertex</find>
+      <find>vertexSkin</find>
+      <find>triangleCount</find>
+      <find>triangleVertex1Index</find>
+      <find>setTex</find>
+      <find>readold</find>
+      <find>setTe</find>
+      <find>set2 += 4;</find>
     </findStrings>
+    <replaceStrings>
+      <replace>texture_edge_a</replace>
+      <replace>texture_edge_b</replace>
+      <replace>texture_edge_c</replace>
+      <replace>face_color</replace>
+      <replace>triangle_edge_b</replace>
+      <replace>triangle_edge_c</replace>
+      <replace>render_type</replace>
+      <replace>render_priorities</replace>
+      <replace>face_alpha</replace>
+      <replace>texturedTriangleCount</replace>
+      <replace>verticeCount</replace>
+      <replace>modelData</replace>
+      <replace>vertexSkin</replace>
+      <replace>triangleType</replace>
+      <replace>trianglePriority</replace>
+      <replace>TriangleAlpha</replace>
+      <replace>triangleAlpha</replace>
+      <replace>triangleSkinWeight</replace>
+      <replace>triangleColor</replace>
+      <replace>anInt1630</replace>
+      <replace>triangleVertex1Index</replace>
+      <replace>triangleVertex2Index</replace>
+      <replace />
+      <replace>vertexCount</replace>
+      <replace>texturedTrianglesCount</replace>
+      <replace>readUnsignedByte</replace>
+      <replace>readByte</replace>
+      <replace>readByte(</replace>
+      <replace>readUnsignedShort</replace>
+      <replace>triangleCount</replace>
+    </replaceStrings>
     <dirStrings>
-      <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/src/org/liquidx/client</dir>
+      <dir>$PROJECT_DIR$/.idea</dir>
+      <dir>$PROJECT_DIR$</dir>
     </dirStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -90,13 +125,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/org/liquidx/client/world/Model.java" />
+        <option value="$PROJECT_DIR$/src/org/liquidx/client/io/Buffer.java" />
+        <option value="$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ObjectDefinition.java" />
+        <option value="$PROJECT_DIR$/src/org/liquidx/client/Client.java" />
         <option value="$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ItemDefinition.java" />
+        <option value="$PROJECT_DIR$/src/org/liquidx/client/WrappedByteBuffer.java" />
+        <option value="$USER_HOME$/Downloads/DsClient 2/com/dreamscape/Model.java" />
+        <option value="$PROJECT_DIR$/src/org/liquidx/client/world/Model.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="636" />
+    <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
   <component name="ProjectView">
@@ -131,6 +171,39 @@
               <item name="liquidx" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="LiquidX Client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LiquidX Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="liquidx" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="cache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LiquidX Client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LiquidX Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="liquidx" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="cache" type="462c0819:PsiDirectoryNode" />
+              <item name="definition" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LiquidX Client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LiquidX Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="liquidx" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LiquidX Client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LiquidX Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="liquidx" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="world" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -142,6 +215,11 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.liquidx.client" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -233,7 +311,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32892805" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32827586" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -244,20 +322,48 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32892805" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.83439493" visible="true" weight="0.2536349" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32892805" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.83439493" visible="true" weight="0.25121164" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32827586" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" order="2" sideWeight="0.1656051" side_tool="true" visible="true" weight="0.2536349" />
+      <window_info id="Favorites" order="2" sideWeight="0.1656051" side_tool="true" weight="0.25121164" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35034484" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.83439493" visible="true" weight="0.25121164" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32827586" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32892805" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32892805" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info id="Favorites" order="6" sideWeight="0.1656051" side_tool="true" visible="true" weight="0.25121164" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -277,7 +383,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/io/ByteBuffer.java">
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/io/Buffer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6840">
           <caret line="456" selection-start-line="456" selection-end-line="456" />
@@ -288,13 +394,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="93" selection-start-line="93" selection-end-line="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/io/ByteBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6390">
-          <caret line="456" selection-start-line="456" selection-end-line="456" />
         </state>
       </provider>
     </entry>
@@ -312,13 +411,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="14331" selection-start-line="14331" selection-end-line="14331" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/graphics/gameframe/impl/TabArea.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -326,24 +418,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/world/Model.java">
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/RSInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19110">
-          <caret line="1283" column="26" selection-start-line="1283" selection-start-column="16" selection-end-line="1283" selection-end-column="26" />
+        <state relative-caret-position="129">
+          <caret line="1991" column="51" lean-forward="true" selection-start-line="1991" selection-start-column="51" selection-end-line="1991" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/io/Buffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="432" column="21" lean-forward="true" selection-start-line="432" selection-start-column="21" selection-end-line="432" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="11090" column="24" selection-start-line="11090" selection-start-column="24" selection-end-line="11090" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ObjectDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="880" column="30" selection-start-line="880" selection-start-column="30" selection-end-line="880" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ItemDefinition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="595" column="22" selection-start-line="595" selection-start-column="22" selection-end-line="595" selection-end-column="22" />
+        <state relative-caret-position="245">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/RSInterface.java">
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/WrappedByteBuffer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-29491">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        <state relative-caret-position="1365">
+          <caret line="137" column="48" lean-forward="true" selection-start-line="137" selection-start-column="48" selection-end-line="137" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/DsClient 2/com/dreamscape/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="34" column="25" lean-forward="true" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/Unzip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/world/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8430">
+          <caret line="187" lean-forward="true" selection-start-line="187" selection-end-line="187" />
         </state>
       </provider>
     </entry>

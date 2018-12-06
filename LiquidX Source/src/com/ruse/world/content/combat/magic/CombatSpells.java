@@ -10,8 +10,10 @@ import com.ruse.model.Item;
 import com.ruse.model.Projectile;
 import com.ruse.model.Skill;
 import com.ruse.world.content.combat.CombatFactory;
+import com.ruse.world.content.combat.HitQueue;
 import com.ruse.world.content.combat.effect.CombatTeleblockEffect;
 import com.ruse.world.content.combat.effect.CombatPoisonEffect.PoisonType;
+import com.ruse.world.content.combat.strategy.Weakness;
 import com.ruse.world.entity.impl.Character;
 import com.ruse.world.entity.impl.npc.NPC;
 import com.ruse.world.entity.impl.player.Player;
@@ -1120,9 +1122,10 @@ public enum CombatSpells {
 
 		@Override
 		public int maximumHit() {
+//			if(HitQueue.CombatHit.getWeakness() == Weakness.WATER)
+//				return 209;
 			return 169;
 		}
-
 		@Override
 		public Optional<Graphic> startGraphic() {
 			return Optional.of(new Graphic(2728));

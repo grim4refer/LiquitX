@@ -27,7 +27,18 @@ public final class ItemDefinition {
 	private static int[] streamIndices;
 	public static int totalItems;
 
-	public static void dumpItemModelsForId(int i) {
+
+    public static void applyTexturing(Model model, int id) {
+        switch (id) {
+
+            case 1153:
+               model.setTexture(60);
+               break;
+        }
+    }
+
+
+    public static void dumpItemModelsForId(int i) {
 		try {
 			ItemDefinition d = get(i);
 
@@ -3765,6 +3776,7 @@ public final class ItemDefinition {
 		if(recolor3 !=null) {
 			model.method1339(recolor3);
 		}
+        applyTexturing(model, id);
 
 		model.light(64 + anInt196, 768 + anInt184, -50, -10, -50, true);
 		model.aBoolean1659 = true;
@@ -3837,6 +3849,7 @@ public final class ItemDefinition {
 		if(recolor3 !=null) {
 			model.method1339(recolor3);
 		}
+        applyTexturing(model, id);
 
 
 		return model;
@@ -3922,6 +3935,7 @@ public final class ItemDefinition {
 		if(recolor3 !=null) {
 			model.method1339(recolor3);
 		}
+        applyTexturing(model, id);
 
 		if (i == 0 && (maleWieldX != 0 || maleWieldY != 0 || maleWieldZ != 0)) {
 			model.translate(maleWieldX, maleWieldY, maleWieldZ);
@@ -3971,7 +3985,9 @@ public final class ItemDefinition {
 			if(recolor3 !=null) {
 				model.method1339(recolor3);
 			}
-		}
+            applyTexturing(model, id);
+
+        }
 
 
 		return model;
