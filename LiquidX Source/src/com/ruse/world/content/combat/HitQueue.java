@@ -16,6 +16,7 @@ import com.ruse.world.content.Achievements;
 import com.ruse.world.content.Achievements.AchievementData;
 import com.ruse.world.content.Kraken;
 import com.ruse.world.content.Sounds;
+import com.ruse.world.content.combat.strategy.Weakness;
 import com.ruse.world.content.combat.strategy.impl.Nex;
 import com.ruse.world.entity.impl.Character;
 import com.ruse.world.entity.impl.npc.NPC;
@@ -54,6 +55,7 @@ public class HitQueue {
 
 	public static class CombatHit {
 
+
 		/** The attacker instance. */
 		private Character attacker;
 
@@ -71,6 +73,12 @@ public class HitQueue {
 
 		private int initialDelay;
 		private int delay;
+
+
+
+		/**
+		 * Checks if the entity has a weakness
+		 */
 
 
 		public CombatHit(CombatBuilder builder, CombatContainer container) {
@@ -285,8 +293,19 @@ public class HitQueue {
 					}
 				} else {
 					Sounds.sendSound((Player)victim, Sounds.getPlayerBlockSounds(((Player)victim).getEquipment().get(Equipment.WEAPON_SLOT).getId()));
+					checkWeakness();
 				}
 			}
+		}
+
+		public Weakness checkWeakness() {
+
+			if(victim != null){
+				if(victim.isNpc() && victim.getCombatBuilder().getStrategy().getWeakness() != null){
+					return victim.getCombatBuilder().getStrategy().getWeakness();
+				}
+			}
+			return Weakness.NONE;
 		}
 
 		public boolean shouldRetaliate() {

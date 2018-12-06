@@ -342,7 +342,6 @@ public class CommandPacketListener implements PacketListener {
 			String target = wholeCommand.substring(command[0].length()+1);
 
 			player.getPacketSender().sendMessage("Opening drops interface...");
-			DropsInterface.open(player,target);
 			/*try {
 				player.getPacketSender().sendMessage("Finding drops for \"" + target+"\".");
 				

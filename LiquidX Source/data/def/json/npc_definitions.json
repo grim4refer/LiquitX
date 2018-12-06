@@ -70940,7 +70940,7 @@
 "poisonous": false,
 "respawn": 10,
 "maxHit": 1,
-"hitpoints": 500,
+"hitpoints": 5000,
 "attackSpeed": 4,
 "attackAnim": 422,
 "defenceAnim": 404,

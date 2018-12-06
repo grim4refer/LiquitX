@@ -59,6 +59,14 @@ public interface CombatStrategy {
      * @return the radius that the attacker has to be within in order to attack.
      */
     public int attackDistance(Character entity);
+
+    /**
+     * What weakness the entity has
+     *
+     * @return the weakness from the entity
+     */
+    public Weakness getWeakness();
     
     public CombatType getCombatType();
+
 }
