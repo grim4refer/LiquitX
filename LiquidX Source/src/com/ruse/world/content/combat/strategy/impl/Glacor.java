@@ -17,10 +17,10 @@ import com.ruse.world.entity.impl.npc.NPC;
 public class Glacor implements CombatStrategy {
 
 
-	@Override
-	public Weakness getWeakness() {
-		return Weakness.FIRE;
-	}
+//	@Override
+//	public Weakness getWeakness() {
+//		return Weakness.FIRE;
+//	}
 	@Override
 	public boolean canAttack(Character entity, Character victim) {
 		return true;

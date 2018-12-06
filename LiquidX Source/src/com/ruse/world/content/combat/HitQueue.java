@@ -293,20 +293,20 @@ public class HitQueue {
 					}
 				} else {
 					Sounds.sendSound((Player)victim, Sounds.getPlayerBlockSounds(((Player)victim).getEquipment().get(Equipment.WEAPON_SLOT).getId()));
-					checkWeakness();
+					//checkWeakness();
 				}
 			}
 		}
 
-		public Weakness checkWeakness() {
-
-			if(victim != null){
-				if(victim.isNpc() && victim.getCombatBuilder().getStrategy().getWeakness() != null){
-					return victim.getCombatBuilder().getStrategy().getWeakness();
-				}
-			}
-			return Weakness.NONE;
-		}
+//		public Weakness checkWeakness() {
+//
+//			if(victim != null){
+//				if(victim.isNpc() && victim.getCombatBuilder().getStrategy().getWeakness() != null){
+//					return victim.getCombatBuilder().getStrategy().getWeakness();
+//				}
+//			}
+//			return Weakness.NONE;
+//		}
 
 		public boolean shouldRetaliate() {
 			if(victim.isPlayer()) {
