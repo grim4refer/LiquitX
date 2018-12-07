@@ -199,6 +199,16 @@ public final class WeaponAnimations {
 		return new CharacterAnimations(playerStandIndex, playerWalkIndex, playerRunIndex, playerTurnIndex, playerTurn180Index, playerTurn90CWIndex, playerTurn90CCWIndex);
 	}
 
+	public static int getGraphics(Player c) {
+		int weaponId = c.getEquipment().getItems()[Equipment.WEAPON_SLOT].getId();
+		String weaponName = ItemDefinition.forId(weaponId).getName().toLowerCase();
+		String prop = c.getFightType().toString().toLowerCase();
+		if(weaponId == 1323) {
+			return 2009;
+		}
+		return 0;
+	}
+
 	public static int getAttackAnimation(Player c) {
 		int weaponId = c.getEquipment().getItems()[Equipment.WEAPON_SLOT].getId();
 		String weaponName = ItemDefinition.forId(weaponId).getName().toLowerCase();
@@ -212,7 +222,7 @@ public final class WeaponAnimations {
 		if(weaponId == 18373)
 			return 1074;
 		if(weaponId == 1323)
-			return 2067;
+			return 2890;
 		if(weaponId == 22010)//ginrei
 			return 1074;
 		if(weaponId == 10033 || weaponId == 10034)

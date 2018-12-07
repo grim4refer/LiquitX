@@ -9,7 +9,10 @@ public class upgradeable {
 
 
     public static enum UpgItem {
-        STARTER_HELM(1153, new int[]{17415}, 2, 1157);
+        STARTER_HELM(1153, new int[]{17415}, 2, 1157),
+        STARTER_PLATE(1115, new int[]{17415}, 2, 1119),
+        STARTER_LEGS(1067, new int[]{17415}, 2, 1069),
+        STARTER_AXE(1323, new int[]{17415}, 2, 1325);
 
         private int[] reqItem;
         private int startItem;

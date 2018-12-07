@@ -1,6 +1,7 @@
 package com.ruse.world.content.combat.strategy.impl;
 
 import com.ruse.model.Animation;
+import com.ruse.model.Graphic;
 import com.ruse.model.definitions.WeaponAnimations;
 import com.ruse.model.definitions.WeaponInterfaces.WeaponInterface;
 import com.ruse.world.content.combat.CombatContainer;
@@ -86,6 +87,7 @@ public class DefaultMeleeCombatStrategy implements CombatStrategy {
             Player player = (Player) entity;
             if (!player.isSpecialActivated()) {
             	player.performAnimation(new Animation(WeaponAnimations.getAttackAnimation(player)));
+            	player.performGraphic(new Graphic(WeaponAnimations.getGraphics(player)));
             } else {
                 player.performAnimation(new Animation(player.getFightType().getAnimation()));
             }
