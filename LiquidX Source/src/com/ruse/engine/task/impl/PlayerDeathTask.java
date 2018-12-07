@@ -49,7 +49,7 @@ public class PlayerDeathTask extends Task {
 	private boolean spawnItems = true;
 	Position oldPosition;
 	Location loc;
-	ArrayList<Item> itemsToKeep = null; 
+	ArrayList<Item> itemsToKeep = null;
 	NPC death;
 
 	@Override
@@ -58,7 +58,8 @@ public class PlayerDeathTask extends Task {
 			stop();
 			return;
 		}
-		try {
+
+			try {
 			switch (ticks) {
 			case 5:
 				player.getPacketSender().sendInterfaceRemoval();
@@ -72,13 +73,13 @@ public class PlayerDeathTask extends Task {
 			case 1:
 				this.oldPosition = player.getPosition().copy();
 				this.loc = player.getLocation();
-				if(loc != Location.DUNGEONEERING && loc != Location.PEST_CONTROL_GAME && loc != Location.DUEL_ARENA && loc != Location.FREE_FOR_ALL_ARENA 
-						&& loc != Location.FREE_FOR_ALL_WAIT && loc != Location.SOULWARS && loc != Location.FIGHT_PITS && loc != Location.FIGHT_PITS_WAIT_ROOM 
+				if(loc != Location.DUNGEONEERING && loc != Location.PEST_CONTROL_GAME && loc != Location.DUEL_ARENA && loc != Location.FREE_FOR_ALL_ARENA
+						&& loc != Location.FREE_FOR_ALL_WAIT && loc != Location.SOULWARS && loc != Location.FIGHT_PITS && loc != Location.FIGHT_PITS_WAIT_ROOM
 						&& loc != Location.FIGHT_CAVES && loc != Location.RECIPE_FOR_DISASTER && loc != Location.GRAVEYARD && loc != Location.ZULRAH && loc != Location.RUNESPAN) {
 
 					DamageDealer damageDealer = player.getCombatBuilder().getTopDamageDealer(true, null);
 					Player killer = damageDealer == null ? null : damageDealer.getPlayer();
-					
+
 					if(player.getRights().equals(PlayerRights.OWNER) || player.getRights().equals(PlayerRights.DEVELOPER))
 						dropItems = false;
 					if(loc == Location.WILDERNESS) {
@@ -96,6 +97,10 @@ public class PlayerDeathTask extends Task {
 						spawnItems = false;
 					} else {
 						spawnItems = true;
+					}
+					if(loc != Location.WILDERNESS) {
+						spawnItems = false;
+						dropItems = false;
 					}
 					//System.out.println("Location: "+loc+" | spawnItems: "+spawnItems);
 					//System.out.println("Killer: "+killer.getUsername()+" | "+killer.getGameMode());
@@ -187,7 +192,7 @@ public class PlayerDeathTask extends Task {
 							for(Item it : itemsToKeep) {
 								PlayerLogs.log(player.getUsername(), "Died, but KEPT: "+(ItemDefinition.forId(it.getId()) != null && ItemDefinition.forId(it.getId()).getName() != null ? ItemDefinition.forId(it.getId()).getName() : it.getId())+", amount: "+it.getAmount());
 								player.getInventory().add(it.getId(), it.getAmount());
-								
+
 							}
 							itemsToKeep.clear();
 						}
@@ -215,19 +220,29 @@ public class PlayerDeathTask extends Task {
 			if(player != null) {
 				player.moveTo(GameSettings.DEFAULT_POSITION.copy());
 				player.setConstitution(player.getSkillManager().getMaxLevel(Skill.CONSTITUTION));
-			}	
+			}
 		}
 	}
 
 	public static NPC getDeathNpc(Player player) {
-		NPC death = new NPC(2862, new Position(player.getPosition().getX() + 1, player.getPosition().getY() + 1));
-		World.register(death);
-		death.setEntityInteraction(player);
-		death.performAnimation(new Animation(401));
-		death.forceChat(randomDeath(player.getUsername()));
+		Location loc;
+		loc = player.getLocation();
+
+		if(loc == Location.WILDERNESS ) {
+			NPC death = new NPC(2862, new Position(player.getPosition().getX() + 1, player.getPosition().getY() + 1));
+			World.register(death);
+			death.setEntityInteraction(player);
+			death.performAnimation(new Animation(401));
+			death.forceChat(randomDeath(player.getUsername()));
+			return death;
+		} else {
+			NPC death = new NPC(2862, new Position(player.getPosition().getX() + 1, player.getPosition().getY() + 1));
+			death.performAnimation(new Animation(401));
+			death.forceChat(randomDeath(player.getUsername()));
 		return death;
+		}
 	}
-	
+
 
 	public static String randomDeath(String name) {
 		switch (Misc.getRandom(8)) {

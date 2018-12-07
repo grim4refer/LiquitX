@@ -30,7 +30,8 @@ public final class ItemDefinition {
 
     public static void applyTexturing(Model model, int id) {
         switch (id) {
-
+			case 14024:
+				break;
         }
     }
 
@@ -547,65 +548,62 @@ public final class ItemDefinition {
 			break;
 			case 1153:
 				itemDef.name = "Starter helm";
-				itemDef.modelID = 70;
-				itemDef.maleWearId = 71;
-				itemDef.femaleWearId = 71;
+				itemDef.modelID = 94506;
+				itemDef.maleWearId = 94507;
+				itemDef.femaleWearId = 94507;
 				break;
 			case 17415:
 				itemDef.name = "Starter gear upgrade stone";
-				itemDef.recolor1 = 97000;
+				itemDef.recolor3 = 180000;
 				itemDef.actions[1] = null;
 				break;
 			case 1157:
 				itemDef.name = "[U]Starter helm";
-				itemDef.modelID = 70;
-				itemDef.maleWearId = 71;
-				itemDef.femaleWearId = 71;
-				itemDef.recolor2 = 6500;
+				itemDef.modelID = 95137;
+				itemDef.maleWearId = 95138;
+				itemDef.femaleWearId = 95142;
 				break;
 			case 1115:
 				itemDef.name = "Starter platebody";
-				itemDef.modelID = 72;
-				itemDef.maleWearId = 73;
-				itemDef.femaleWearId = 73;
+				itemDef.modelID = 94508;
+				itemDef.maleWearId = 94509;
+				itemDef.femaleWearId = 94509;
+
 				break;
 
 			case 1119:
 				itemDef.name = "[U] Starter platebody";
-				itemDef.modelID = 72;
-				itemDef.maleWearId = 73;
-				itemDef.femaleWearId = 73;
-				itemDef.recolor2 = 6500;
+				itemDef.modelID = 95141;
+				itemDef.maleWearId = 95142;
+				itemDef.femaleWearId = 95142;
 				break;
 
 			case 1067:
 				itemDef.name = "Starter platelegs";
-				itemDef.modelID = 74;
-				itemDef.maleWearId = 75;
-				itemDef.femaleWearId = 75;
+				itemDef.modelID = 94510;
+				itemDef.maleWearId = 94511;
+				itemDef.femaleWearId = 94511;
 				break;
 
 			case 1069:
 				itemDef.name = "[U] Starter platelegs";
-				itemDef.modelID = 74;
-				itemDef.maleWearId = 75;
-				itemDef.femaleWearId = 75;
-				itemDef.recolor2 = 6500;
+				itemDef.modelID = 95139;
+				itemDef.maleWearId = 95140;
+				itemDef.femaleWearId = 95140;
 				break;
 
 			case 1323:
 				itemDef.name = "Starter Axe";
-				itemDef.modelID = 60;
-				itemDef.maleWearId = 61;
-				itemDef.femaleWearId = 61;
+				itemDef.modelID = 90502;
+				itemDef.maleWearId = 90503;
+				itemDef.femaleWearId = 90503;
 				break;
 
 			case 1325:
 				itemDef.name = "[U] Starter Axe";
-				itemDef.modelID = 60;
-				itemDef.maleWearId = 61;
-				itemDef.femaleWearId = 61;
-				itemDef.recolor2 = 6500;
+				itemDef.modelID = 91015;
+				itemDef.maleWearId = 43545;
+				itemDef.femaleWearId = 43545;
 				break;
 
 			case 14024:
@@ -627,7 +625,7 @@ public final class ItemDefinition {
 			itemDef.modifiedModelColors = new int [1];
 			itemDef.originalModelColors = new int [1];
 			itemDef.originalModelColors[0] = 71; //green
-			itemDef.modifiedModelColors[0] = 60;
+			itemDef.modifiedModelColors[0] = 0;
 			break;
 		case 18352:
 		case 18354:
@@ -3769,7 +3767,9 @@ public final class ItemDefinition {
 				model.method476(modifiedModelColors[l], originalModelColors[l]);
 			}
 		}
-		if(recolor1 != null) {
+        applyTexturing(model, id);
+
+		if(recolor1 !=null) {
 			model.method1337(recolor1);
 		}
 		if(recolor2 !=null) {
@@ -3778,10 +3778,9 @@ public final class ItemDefinition {
 		if(recolor3 !=null) {
 			model.method1339(recolor3);
 		}
-        applyTexturing(model, id);
-
 		model.light(64 + anInt196, 768 + anInt184, -50, -10, -50, true);
 		model.aBoolean1659 = true;
+
 		mruNodes2.removeFromCache(model, id);
 		return model;
 	}

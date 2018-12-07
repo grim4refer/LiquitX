@@ -124,9 +124,10 @@ public final class WeaponAnimations {
 			playerRunIndex = 13220;
 			break;
 			case 1323:
-			playerStandIndex = 0x811;
-			playerWalkIndex = 0x67F;
-			playerRunIndex = 0x680;
+			case 1325:
+				playerStandIndex = 8980;
+				playerRunIndex = 1210;
+				playerWalkIndex = 1146;
 			break;
 		case 4151:
 		case 21371: //vine whip
@@ -206,6 +207,9 @@ public final class WeaponAnimations {
 		if(weaponId == 1323) {
 			return 2009;
 		}
+		if(weaponId == 1325) {
+			return 333;
+		}
 		return 0;
 	}
 
@@ -221,6 +225,8 @@ public final class WeaponAnimations {
 		}
 		if(weaponId == 18373)
 			return 1074;
+		if(weaponId == 1325)
+			return 15072;
 		if(weaponId == 1323)
 			return 2890;
 		if(weaponId == 22010)//ginrei

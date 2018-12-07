@@ -76,6 +76,28 @@ public final class MobDefinition {
 			definition.actions[2] = "Follow";
 			definition.actions[3] = "Trade";
 			break;
+			case 3222:
+			definition.name = "donkey kong";
+			definition.npcModels = new int[]{94219};
+				MobDefinition vet2 = get(90);
+				definition.combatLevel = 666;
+				definition.standAnimation = 11973;
+				definition.walkAnimation = 11975;
+				break;
+			case 1677:
+			case 1676:
+			case 1678:
+			definition.name = "Godzilla";
+			definition.npcModels = new int[]{95122};
+			definition.npcSizeInSquares = 3;
+			definition.combatLevel = 999;
+				definition.standAnimation = 11973;
+				definition.adjustVertextPointsXOrY = 150;
+				definition.adjustVertextPointZ = 150;
+				definition.originalModelColours = new int[]{40,60,51,52,53,54,55,56,57,58,59};
+				definition.changedModelColours = new int[] {55,55,55,55,55,55,55,55,55,55,55};
+				definition.walkAnimation = 11975;
+				break;
 		case 2589:
 			definition.name = "An0nymous26";
 			definition.description = "Browses 4chan.".getBytes();

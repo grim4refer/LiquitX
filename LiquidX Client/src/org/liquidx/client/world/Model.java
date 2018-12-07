@@ -449,23 +449,20 @@ public class Model extends Animable {
 		anInt1647 = model.anInt1647;
 	}
 
+
 	private Model(int modelId) {
 		byte[] is = aClass21Array1661[modelId].aByteArray368;
 
 		if (is[is.length - 1] == -1 && is[is.length - 2] == -1)
 			read622Model(is, modelId);
-		 else
+		else
 			readOldModel(modelId);
 
 
-		if (newmodel[modelId]) {
-			if (face_render_priorities != null) {
-				for (int j = 0; j < face_render_priorities.length; j++)
-					face_render_priorities[j] = 10;
-			}
-			this.priority = 10;
-		}
-
+		if (face_render_priorities != null) {
+			for (int j = 0; j < face_render_priorities.length; j++)
+				face_render_priorities[j] = 10;
+		}//should be it u didnt need the other part already did this but lets ssee
 	}
 
 	public Model(int i, Model amodel[]) {
@@ -3014,9 +3011,8 @@ public class Model extends Animable {
 		scale2(2); //2 seems to be right with the new scale2. scale2Old should be set to 4.
 		translate(0, 6, 0);
 		if (face_render_priorities != null) {
-			for (int j = 0; j < face_render_priorities.length; j++) {
+			for (int j = 0; j < face_render_priorities.length; j++)
 				face_render_priorities[j] = 10;
-			}
 		}
 	}
 
@@ -3166,6 +3162,10 @@ public class Model extends Animable {
 			anIntArray1643[j4] = stream.getUnsignedShort();
 			anIntArray1644[j4] = stream.getUnsignedShort();
 			anIntArray1645[j4] = stream.getUnsignedShort();
+		}
+		if (face_render_priorities != null) {
+			for (j = 0; j < face_render_priorities.length; j++)
+				face_render_priorities[j] = 10;
 		}
 	}
 	

@@ -10976,6 +10976,8 @@ public class Client extends GameRenderer {
 			Rasterizer.method370(17);
 			anInt854++;
 
+
+
 			if (anInt854 > 1235) {
 				anInt854 = 0;
 				getOut().putOpcode(226);
@@ -10999,6 +11001,62 @@ public class Client extends GameRenderer {
 			}
 		}
 
+		if (Rasterizer.anIntArray1480[40] >= j) {
+			Background background = Rasterizer.aBackgroundArray1474s[40];
+			int k = background.imgWidth * background.imgHeight - 1;
+			int j1 = background.imgWidth * anInt945 * speed;
+			byte abyte0[] = background.imgPixels;
+			byte abyte3[] = aByteArray912;
+
+			for (int i2 = 0; i2 <= k; i2++) {
+				abyte3[i2] = abyte0[i2 - j1 & k];
+			}
+
+			background.imgPixels = abyte3;
+			aByteArray912 = abyte0;
+			Rasterizer.method370(40);
+			anInt854++;
+
+
+
+			if (anInt854 > 1235) {
+				anInt854 = 0;
+				getOut().putOpcode(226);
+				getOut().putByte(0);
+				int l2 = getOut().position;
+				getOut().putShort(58722);
+				getOut().putByte(240);
+				getOut().putShort((int) (Math.random() * 65536D));
+				getOut().putByte((int) (Math.random() * 256D));
+
+				if ((int) (Math.random() * 2D) == 0) {
+					getOut().putShort(51825);
+				}
+
+				getOut().putByte((int) (Math.random() * 256D));
+				getOut().putShort((int) (Math.random() * 65536D));
+				getOut().putShort(7130);
+				getOut().putShort((int) (Math.random() * 65536D));
+				getOut().putShort(61657);
+				getOut().putVariableSizeByte(getOut().position - l2);
+			}
+		}
+
+		if (Rasterizer.anIntArray1480[55] >= j) {
+			Background background_1 = Rasterizer.aBackgroundArray1474s[55];
+			int l = background_1.imgWidth * background_1.imgHeight - 1;
+			int k1 = background_1.imgWidth * anInt945 * 2;
+			byte abyte1[] = background_1.imgPixels;
+			byte abyte4[] = aByteArray912;
+
+			for (int j2 = 0; j2 <= l; j2++) {
+				abyte4[j2] = abyte1[j2 - k1 & l];
+			}
+
+			background_1.imgPixels = abyte4;
+			aByteArray912 = abyte1;
+			Rasterizer.method370(55);
+		}
 		if (Rasterizer.anIntArray1480[24] >= j) {
 			Background background_1 = Rasterizer.aBackgroundArray1474s[24];
 			int l = background_1.imgWidth * background_1.imgHeight - 1;

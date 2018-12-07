@@ -2,6 +2,7 @@ package com.ruse.world.content.combat.strategy.impl;
 
 import com.ruse.model.Animation;
 import com.ruse.model.Graphic;
+import com.ruse.model.GraphicHeight;
 import com.ruse.model.definitions.WeaponAnimations;
 import com.ruse.model.definitions.WeaponInterfaces.WeaponInterface;
 import com.ruse.world.content.combat.CombatContainer;
@@ -12,6 +13,8 @@ import com.ruse.world.content.minigames.impl.Dueling.DuelRule;
 import com.ruse.world.entity.impl.Character;
 import com.ruse.world.entity.impl.npc.NPC;
 import com.ruse.world.entity.impl.player.Player;
+
+import java.awt.*;
 
 /**
  * The default combat strategy assigned to an {@link Character} during a melee
@@ -81,13 +84,20 @@ public class DefaultMeleeCombatStrategy implements CombatStrategy {
     private void startAnimation(Character entity) {
         if (entity.isNpc()) {
             NPC npc = (NPC) entity;
+
             npc.performAnimation(new Animation(
                 npc.getDefinition().getAttackAnimation()));
+
         } else if (entity.isPlayer()) {
             Player player = (Player) entity;
             if (!player.isSpecialActivated()) {
             	player.performAnimation(new Animation(WeaponAnimations.getAttackAnimation(player)));
-            	player.performGraphic(new Graphic(WeaponAnimations.getGraphics(player)));
+            	if(WeaponAnimations.getGraphics(player) != 0) {
+                    player.performGraphic(new Graphic(WeaponAnimations.getGraphics(player)));
+                } else if(WeaponAnimations.getGraphics(player) == 333) {
+            	    player.performGraphic(new Graphic(WeaponAnimations.getGraphics(player),GraphicHeight.MIDDLE));
+                }
+
             } else {
                 player.performAnimation(new Animation(player.getFightType().getAnimation()));
             }
