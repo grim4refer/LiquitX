@@ -559,9 +559,9 @@ public final class ItemDefinition {
 				break;
 			case 1157:
 				itemDef.name = "[U]Starter helm";
-				itemDef.modelID = 95137;
-				itemDef.maleWearId = 95138;
-				itemDef.femaleWearId = 95142;
+				itemDef.modelID = 90694;
+				itemDef.maleWearId = 90695;
+				itemDef.femaleWearId = 90695;
 				break;
 			case 1115:
 				itemDef.name = "Starter platebody";
@@ -573,9 +573,9 @@ public final class ItemDefinition {
 
 			case 1119:
 				itemDef.name = "[U] Starter platebody";
-				itemDef.modelID = 95141;
-				itemDef.maleWearId = 95142;
-				itemDef.femaleWearId = 95142;
+				itemDef.modelID = 90696;
+				itemDef.maleWearId = 90697;
+				itemDef.femaleWearId = 90697;
 				break;
 
 			case 1067:
@@ -587,9 +587,9 @@ public final class ItemDefinition {
 
 			case 1069:
 				itemDef.name = "[U] Starter platelegs";
-				itemDef.modelID = 95139;
-				itemDef.maleWearId = 95140;
-				itemDef.femaleWearId = 95140;
+                itemDef.modelID = 90698;
+                itemDef.maleWearId = 90699;
+                itemDef.femaleWearId = 90699;
 				break;
 
 			case 1323:
@@ -642,6 +642,73 @@ public final class ItemDefinition {
 		case 18355:
 			itemDef.actions = new String[] { null, "Wear", null, null, "Drop" };
 			break;
+
+            case 21070:
+                itemDef.actions = new String[] { null, "Wear", null, null, "Drop" };
+                itemDef.name = "Steve's Purple helm";
+                itemDef.modelID = 91320;
+                itemDef.maleWearId = 91321;
+                itemDef.femaleWearId = 91321;
+                break;
+            case 21071:
+                itemDef.actions = new String[] { null, "Wear", null, null, "Drop" };
+                itemDef.name = "Steve's body";
+                itemDef.modelID = 91315;
+                itemDef.maleWearId = 91316;
+                itemDef.femaleWearId = 91316;
+                break;
+            case 21072:
+                itemDef.actions = new String[] { null, "Wear", null, null, "Drop" };
+                itemDef.name = "Steve's legs";
+                itemDef.modelID = 91323;
+                itemDef.maleWearId = 91322;
+                itemDef.femaleWearId = 9123;
+                break;
+            case 21073:
+                itemDef.actions = new String[] { null, "Wear", null, null, "Drop" };
+                itemDef.name = "Steve's cape";
+                itemDef.modelID = 91412;
+                itemDef.maleWearId = 91413;
+                itemDef.femaleWearId = 91413;
+                break;
+            case 21074:
+                itemDef.actions = new String[] { null, "Wear", null, null, "Drop" };
+                itemDef.name = "2% necklace";
+                itemDef.modelID = 91233;
+                itemDef.maleWearId = 91234;
+                itemDef.femaleWearId = 91234;
+                break;
+
+            case 21075:
+                itemDef.actions = new String[] { null, "Wear", null, null, "Drop" };
+                itemDef.name = "Dual beretta";
+                itemDef.modelID = 91214;
+                itemDef.maleWearId = 91215;
+                itemDef.femaleWearId = 91215;
+                break;
+
+            case 21076:
+                itemDef.actions = new String[] { null, "Wear", null, null, "Drop" };
+                itemDef.name = "Steve's scythe";
+                itemDef.modelID = 95109;
+                itemDef.maleWearId = 95110;
+                itemDef.femaleWearId = 95110;
+                break;
+            case 21077:
+                itemDef.actions = new String[] { null, "Wear", null, null, "Drop" };
+                itemDef.name = "Steve's boots";
+                itemDef.modelID = 91317;
+                itemDef.maleWearId = 91317;
+                itemDef.femaleWearId = 91317;
+                break;
+            case 21078:
+                itemDef.actions = new String[] { null, "Wear", null, null, "Drop" };
+                itemDef.name = "Steve's gloves";
+                itemDef.modelID = 91318;
+                itemDef.maleWearId = 91319;
+                itemDef.femaleWearId = 91319;
+                break;
+
 		case 19670:
 			itemDef.name = "Vote scroll";
 			itemDef.actions = new String[5];

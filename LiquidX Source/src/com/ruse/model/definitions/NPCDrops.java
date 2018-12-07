@@ -442,6 +442,7 @@ public class NPCDrops {
 		}
 		final boolean goGlobal = p.getPosition().getZ() >= 0 && p.getPosition().getZ() < 4;
 		final boolean ringOfWealth = p.getEquipment().get(Equipment.RING_SLOT).getId() == 2572;
+		final boolean Amulet2 = p.getEquipment().get(Equipment.AMULET_SLOT).getId() == 21074;
 		boolean[] dropsReceived = new boolean[14];
 		boolean goldCharms = true;
 		boolean crimsonCharms = true;
@@ -509,7 +510,7 @@ public class NPCDrops {
 			if (dropChance == DropChance.ALWAYS) {
 				drop(p, drops.getDropList()[i].getItem(), npc, npcPos, goGlobal);
 			} else {
-				if(shouldDrop(dropsReceived, dropChance, ringOfWealth)) {
+				if(shouldDrop(p, dropsReceived, dropChance, ringOfWealth,Amulet2)) {
 					drop(p, drops.getDropList()[i].getItem(), npc, npcPos, goGlobal);
 					dropsReceived[dropChance.ordinal()] = true;
 				}
@@ -547,12 +548,25 @@ public class NPCDrops {
 		return count;
 	}
 
-	public static boolean shouldDrop(boolean[] b, DropChance chance, boolean ringOfWealth) {
-		int random = chance.getRandom(); //pull the chance from the table
-		if (ringOfWealth && random >= 60) { //if the chance from the table is greater or equal to 60, and player is wearing ring of wealth
-			random -= (random / 10); //the chance from the table is lowered by 10% of the table's value
+	public static boolean shouldDrop(Player p, boolean[] b, DropChance chance, boolean ringOfWealth,boolean Amulet2) {
+
+		double random = chance.getRandom(); //pull the chance from the table
+		double drBoost = 0;
+
+		if (ringOfWealth   && random >= 5) { //if the chance from the table is greater or equal to 60, and player is wearing ring of wealth
+			drBoost += 2;
 		}
-		return !b[chance.ordinal()] && Misc.getRandom(random) == 1; //return true if random between 0 & table value is 1.
+		if (Amulet2) {
+			drBoost += 2;
+		}
+		p.getPacketSender().sendMessage("@red@Your droprate is boosted by "+random+"%");
+
+		p.getPacketSender().sendMessage("@red@Your droprate is boosted by "+drBoost+"%");
+
+		random = random * ((100-drBoost)/100);
+		p.getPacketSender().sendMessage("@red@end dr by "+(int) random+"%");
+
+		return !b[chance.ordinal()] && Misc.getRandom((int) random) == 1; //return true if random between 0 & table value is 1.
 	}
 
 	public static void drop(Player player, Item item, NPC npc, Position pos, boolean goGlobal) {

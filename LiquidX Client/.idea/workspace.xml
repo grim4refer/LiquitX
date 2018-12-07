@@ -15,20 +15,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ItemDefinition.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ItemDefinition.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ItemDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8865">
-              <caret line="601" column="21" selection-start-line="601" selection-start-column="17" selection-end-line="601" selection-end-column="21" />
+            <state relative-caret-position="295">
+              <caret line="684" column="40" lean-forward="true" selection-start-line="684" selection-start-column="40" selection-end-line="684" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MobDefinition.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MobDefinition.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/cache/definition/MobDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="89" column="29" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
+            <state relative-caret-position="203">
+              <caret line="86" column="22" lean-forward="true" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -113,10 +113,8 @@
       <find>client.java</find>
       <find>Starter</find>
       <find>elemental</find>
-      <find>starter</find>
       <find>1323</find>
       <find>3222</find>
-      <find>Starter</find>
       <find>groudon</find>
       <find>et.walkAnimatio</find>
       <find>8350</find>
@@ -125,6 +123,7 @@
       <find>Rasterizer.</find>
       <find>1675</find>
       <find>god</find>
+      <find>donator ra</find>
     </findStrings>
     <replaceStrings>
       <replace>texture_edge_a</replace>
@@ -180,10 +179,10 @@
         <option value="$USER_HOME$/Downloads/DsClient 2/com/dreamscape/Model.java" />
         <option value="$PROJECT_DIR$/src/org/liquidx/client/world/Model.java" />
         <option value="$USER_HOME$/Downloads/DreamScape/Client/src/ItemDef_2.java" />
-        <option value="$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ItemDefinition.java" />
         <option value="$PROJECT_DIR$/src/org/liquidx/client/world/CustomObjects.java" />
         <option value="$PROJECT_DIR$/src/org/liquidx/client/Client.java" />
         <option value="$PROJECT_DIR$/src/org/liquidx/client/cache/definition/MobDefinition.java" />
+        <option value="$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ItemDefinition.java" />
       </list>
     </option>
   </component>
@@ -376,6 +375,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.83439493" visible="true" weight="0.26332796" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49919224" weight="0.32827586" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -387,7 +387,6 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49919224" weight="0.32827586" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
@@ -708,13 +707,6 @@
     <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/graphics/rsinterface/CustomInterfaces.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ItemDefinition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8865">
-          <caret line="601" column="21" selection-start-line="601" selection-start-column="17" selection-end-line="601" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/DSClient/com/dreamscape/cache/configs/npctype/NPCTypeList.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -760,8 +752,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/cache/definition/MobDefinition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="89" column="29" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
+        <state relative-caret-position="203">
+          <caret line="86" column="22" lean-forward="true" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ItemDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="684" column="40" lean-forward="true" selection-start-line="684" selection-start-column="40" selection-end-line="684" selection-end-column="40" />
         </state>
       </provider>
     </entry>
