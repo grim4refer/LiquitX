@@ -26,11 +26,11 @@ public enum TeleportLocations {
 	
 	//MONSTERS
     TRAINING_ISLAND(new Position(2853, 3239, 0), ""),
-    EXPERIMENTS(new Position(3558, 9948, 0), ""),
+	GODZILLA(new Position(3558, 9948, 0), ""),
     YAKS(new Position(3204, 3264, 0), ""),
     BANDITS(new Position(3171, 2981, 0), ""),
     GHOULS(new Position(3420, 3510, 0), ""),
-    CHAOS_DRUIDS(new Position(2931, 9846, 0), ""),
+    GROUDON(new Position(1760, 5164, 0), ""),
     GOBLINS(new Position(3259, 3228, 0), ""),
     DUST_DEVILS(new Position(3279, 2964, 0), ""),
     CHICKENS(new Position(3235, 3295, 0), ""),

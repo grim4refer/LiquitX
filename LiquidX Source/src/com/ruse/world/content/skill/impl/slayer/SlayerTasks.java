@@ -17,7 +17,7 @@ public enum SlayerTasks {
 	 */
 	GOBLIN(SlayerMaster.VANNAKA, 4275, "Goblins are found in the Training Teleports.", 19, new Position(3246, 3245, 0)),
 	ROCK_CRAB(SlayerMaster.VANNAKA, 1265, "Rock Crabs can be found in the Training Teleport.", 21, new Position(2709, 3715, 0)),
-	EXPERIMENT(SlayerMaster.VANNAKA, 1677, "Experiments can be found in the Training Teleport.", 22, new Position(3564, 9954, 0)),
+	GODZILLA(SlayerMaster.VANNAKA, 1677, "Experiments can be found in the Training Teleport.", 22, new Position(3564, 9954, 0)),
 	GIANT_BAT(SlayerMaster.VANNAKA, 78, "Giant Bats can be found in Taverly Dungeon.", 20, new Position(2907, 9833, 0)),
 	CHAOS_DRUID(SlayerMaster.VANNAKA, 181, "Chaos Druids can be found in Edgeville Dungeon.", 22, new Position(3109, 9931, 0)),
 	ZOMBIE(SlayerMaster.VANNAKA, 76, "Zombies can be found in Edgeville Dungeon.", 20, new Position(3144, 9903, 0)),

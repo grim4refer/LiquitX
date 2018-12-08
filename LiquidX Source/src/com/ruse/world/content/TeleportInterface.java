@@ -199,11 +199,11 @@ public class TeleportInterface {
 		CHILL(PAGEOPTIONS[0]+13, "Chill", "An icy mountain away from most folk.", "A hearty place to relax.", TeleportLocations.CHILL, PAGEBUTTONS[0]+13),
 		/* Monsters */
 		ROCK_CRABS(PAGEOPTIONS[1], "Training Island", "Level: 13", "@gre@Non-wilderness.", TeleportLocations.TRAINING_ISLAND, PAGEBUTTONS[1]),
-		EXPERIMENTS(PAGEOPTIONS[1]+1, "Experiments", "Level: 25", "@gre@Non-wilderness.", TeleportLocations.EXPERIMENTS, PAGEBUTTONS[1]+1),
+		GODZILLA(PAGEOPTIONS[1]+1, "Godzilla", "Level: 25", "@gre@Non-wilderness.", TeleportLocations.GODZILLA, PAGEBUTTONS[1]+1),
 		YAKS(PAGEOPTIONS[1]+2, "Yaks", "Level: 22", "@gre@Non-wilderness.", TeleportLocations.YAKS, PAGEBUTTONS[1]+2),
 		BANDITS(PAGEOPTIONS[1]+3, "Bandits", "Level: 56", "@gre@Non-wilderness.", TeleportLocations.BANDITS, PAGEBUTTONS[1]+3),
 		GHOULS(PAGEOPTIONS[1]+4, "Ghouls", "Level: 42", "@gre@Non-wilderness.", TeleportLocations.GHOULS, PAGEBUTTONS[1]+4),
-		CHAOS_DRUIDS(PAGEOPTIONS[1]+5, "Chaos Druids", "Level: 13", "@gre@Non-wilderness.", TeleportLocations.CHAOS_DRUIDS, PAGEBUTTONS[1]+5),
+		CHAOS_DRUIDS(PAGEOPTIONS[1]+5, "Groudon", "Level: 13", "@gre@Non-wilderness.", TeleportLocations.GROUDON, PAGEBUTTONS[1]+5),
 		GOBLINS(PAGEOPTIONS[1]+6, "Goblins", "Level: 2", "@gre@Non-wilderness.", TeleportLocations.GOBLINS, PAGEBUTTONS[1]+6),
 		DUST_DEVILS(PAGEOPTIONS[1]+7, "Dust Devils", "Level: 93", "@gre@Non-wilderness.", TeleportLocations.DUST_DEVILS, PAGEBUTTONS[1]+7),
 		CHICKENS(PAGEOPTIONS[1]+8, "Chickens", "Level: 1", "@gre@Non-wilderness.", TeleportLocations.CHICKENS, PAGEBUTTONS[1]+8),

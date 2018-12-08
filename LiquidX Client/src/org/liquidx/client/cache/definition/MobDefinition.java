@@ -98,6 +98,7 @@ public final class MobDefinition {
 				definition.changedModelColours = new int[] {55,55,55,55,55,55,55,55,55,55,55};
 				definition.walkAnimation = 11975;
 				break;
+
 		case 2589:
 			definition.name = "An0nymous26";
 			definition.description = "Browses 4chan.".getBytes();
@@ -188,7 +189,38 @@ public final class MobDefinition {
 				definition.actions = new String[] {"Store", null, null, null, null};
 			}
 			break;
-		case 13465:
+			case 1200:
+				definition.name = "Black Phanther";
+				definition.npcModels = new int[]{94252, 94253, 94254, 44758, 44752};
+				definition.walkAnimation = 819;
+				definition.standAnimation = 808;
+				definition.npcSizeInSquares = 1;
+				break;
+			case 1880:
+				definition.name = "Necromancer";
+				definition.npcModels = new int[]{94078, 94079, 94080, 94081, 94082, 94083, 91074, 94073, 51602, 91524, 77574};
+				definition.walkAnimation = 819;
+				definition.standAnimation = 808;
+				definition.npcSizeInSquares = 1;
+                definition.originalModelColours = new int[]{22439};
+                definition.changedModelColours = new int[]{947};
+				break;
+			case 1218:
+				definition.name = "Yoda";
+				definition.npcModels = new int[]{94042};
+				definition.walkAnimation = 11975;
+				definition.standAnimation = 11973;
+				definition.npcSizeInSquares = 2;
+				break;
+            case 1230:
+                definition.name = "Water Groudon";
+                definition.npcModels = new int[] {94388};
+                definition.walkAnimation = 11975;
+                definition.standAnimation = 11973;
+                definition.npcSizeInSquares = 3;
+                definition.originalModelColours = new int[]{40,1,24};
+                definition.changedModelColours = new int[]{70,57,57};
+            case 13465:
 			definition.combatLevel = 91;
 			break;
 		case 13469:
