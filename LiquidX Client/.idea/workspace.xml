@@ -27,8 +27,8 @@
       <file leaf-file-name="MobDefinition.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/cache/definition/MobDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="105" column="42" selection-start-line="105" selection-start-column="42" selection-end-line="105" selection-end-column="42" />
+            <state>
+              <caret line="77" column="18" lean-forward="true" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,19 +36,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Thread.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Thread.java" pinned="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
+            <state relative-caret-position="-124">
               <caret line="747" selection-start-line="747" selection-end-line="747" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NPCTypeList.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NPCTypeList.java" pinned="false" current-in-tab="true">
         <entry file="file://$USER_HOME$/Downloads/DsClient 2/com/dreamscape/cache/configs/npctype/NPCTypeList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1770">
+            <state relative-caret-position="14">
               <caret line="131" column="45" selection-start-line="131" selection-start-column="40" selection-end-line="131" selection-end-column="45" />
             </state>
           </provider>
@@ -714,13 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/DsClient 2/com/dreamscape/cache/configs/npctype/NPCTypeList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1770">
-          <caret line="131" column="45" selection-start-line="131" selection-start-column="40" selection-end-line="131" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207765">
@@ -757,20 +750,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-124">
+          <caret line="747" selection-start-line="747" selection-end-line="747" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/cache/definition/MobDefinition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="105" column="42" selection-start-line="105" selection-start-column="42" selection-end-line="105" selection-end-column="42" />
+        <state>
+          <caret line="77" column="18" lean-forward="true" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+    <entry file="file://$USER_HOME$/Downloads/DsClient 2/com/dreamscape/cache/configs/npctype/NPCTypeList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="747" selection-start-line="747" selection-end-line="747" />
+        <state relative-caret-position="14">
+          <caret line="131" column="45" selection-start-line="131" selection-start-column="40" selection-end-line="131" selection-end-column="45" />
         </state>
       </provider>
     </entry>
