@@ -84,6 +84,9 @@ public class DesolaceFormulas {
                                 } else if (npcElemental.contains("Dark")) {
                                     base *= 1.10;
                                     plr.getPacketSender().sendMessage("Your weapon does extra damage against a dark type monster");
+                               } else if (npcElemental.contains("Mythical")) {
+                                    base *= 1.10;
+                                    plr.getPacketSender().sendMessage("Your weapon does extra damage against a Mythical type monster");
                                 } else if (npcElemental.contains("Earth")) {
                                     base *= 0.90;
                                     plr.getPacketSender().sendMessage("Your weapon does less damage against a earth type monster");

@@ -36963,7 +36963,7 @@
 {
 "id": 1677,
 "name": "Godzille",
-"examine": "Godzilla!",
+"examine": "Godzilla! Elemental: Mythical",
 "combat": 999,
 "size": 2,
 "attackable": true,
@@ -36985,7 +36985,7 @@
 {
 "id": 1678,
 "name": "Godzilla",
-"examine": "Godzilla!",
+"examine": "Godzilla! Elemental: Mythical",
 "combat": 25,
 "size": 1,
 "attackable": true,
