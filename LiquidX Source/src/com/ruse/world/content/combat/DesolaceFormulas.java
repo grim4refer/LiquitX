@@ -1,6 +1,8 @@
 package com.ruse.world.content.combat;
 
+import com.ruse.GameSettings;
 import com.ruse.model.Graphic;
+import com.ruse.model.GraphicHeight;
 import com.ruse.model.Skill;
 import com.ruse.model.container.impl.Equipment;
 import com.ruse.model.definitions.ItemDefinition;
@@ -14,6 +16,8 @@ import com.ruse.world.content.combat.weapon.FightType;
 import com.ruse.world.entity.impl.Character;
 import com.ruse.world.entity.impl.npc.NPC;
 import com.ruse.world.entity.impl.player.Player;
+
+import java.awt.*;
 
 public class DesolaceFormulas {
 
@@ -64,6 +68,31 @@ public class DesolaceFormulas {
 					base += (int) ((0.20) * (base));
 				} else if (npc.getDefenceWeakened()[2]) {
 					base += (int) ((0.30) * (base));
+				}
+
+
+
+
+				if (entity.isPlayer()) {
+					if(npc.getDefinition().getExamine() != null) {
+						String npcElemental = npc.getDefinition().getExamine();
+						ItemDefinition wep = ItemDefinition.forId(plr.getEquipment().get(Equipment.WEAPON_SLOT).getId());
+							int elemental = wep.getElemental();
+								switch (elemental) {
+									case 1: //fire wep
+										if (npcElemental.contains("Grass")) {
+											base *= 1.10;
+											plr.getPacketSender().sendMessage("You received elemental dmg");
+											npc.getDefinition().setOnFire = true;
+										} else {
+											base *= 1;
+										}
+										break;
+										default:
+											base *= 1;
+											plr.getPacketSender().sendMessage("Your weapon has no elemental set");
+								}
+					}
 				}
 
 				/** SLAYER HELMET **/

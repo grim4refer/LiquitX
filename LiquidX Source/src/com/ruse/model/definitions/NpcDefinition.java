@@ -83,6 +83,8 @@ public class NpcDefinition {
 	/** This npc's slayer level required to attack. */
 	private int slayerLevel;
 
+	private String elemental;
+
 	/**
 	 * Prepares the dynamic json loader for loading npc definitions.
 	 * 
@@ -192,6 +194,16 @@ public class NpcDefinition {
 		this.name = name;
 	}
 
+	public static boolean setOnFire = false;
+
+
+	public void setElemental(String name) {
+		if(name == null) {
+			this.elemental = "Nope";
+		} else {
+			this.elemental = elemental;
+		}
+	}
 	/**
 	 * Gets the examine info for this npc.
 	 * 
@@ -199,6 +211,11 @@ public class NpcDefinition {
 	 */
 	public String getExamine() {
 		return examine;
+	}
+
+
+	public String getElemental() {
+		return elemental;
 	}
 
 	/**

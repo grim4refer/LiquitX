@@ -282,6 +282,8 @@ public class NPC extends Character {
 		this.defaultConstitution = defaultConstitution;
 	}
 
+	public static boolean setOnFire = false;
+
 	/**
 	 * @return the statsWeakened
 	 */

@@ -1,11 +1,15 @@
 package com.ruse.world.content.combat.strategy.impl;
 
+import com.ruse.GameSettings;
 import com.ruse.model.Animation;
+import com.ruse.model.Damage;
 import com.ruse.model.Graphic;
 import com.ruse.model.GraphicHeight;
+import com.ruse.model.definitions.ItemDefinition;
 import com.ruse.model.definitions.WeaponAnimations;
 import com.ruse.model.definitions.WeaponInterfaces.WeaponInterface;
 import com.ruse.world.content.combat.CombatContainer;
+import com.ruse.world.content.combat.CombatFactory;
 import com.ruse.world.content.combat.CombatType;
 import com.ruse.world.content.combat.strategy.CombatStrategy;
 import com.ruse.world.content.minigames.impl.Dueling;
@@ -44,8 +48,15 @@ public class DefaultMeleeCombatStrategy implements CombatStrategy {
     @Override
     public CombatContainer attack(Character entity, Character victim) {
 
+
         // Start the performAnimation for this attack.
         startAnimation(entity);
+        if(victim.isNpc()) {
+            if(((NPC)entity).getDefinition().setOnFire == true) {
+                victim.performGraphic(new Graphic(2121));
+                ((NPC)entity).getDefinition().setOnFire = false;
+            }
+        }
 
         // Create the combat container for this hook.
         return new CombatContainer(entity, victim, 1, CombatType.MELEE, true);

@@ -118,6 +118,9 @@ public class GameSettings {
 		{4587, 20051, 13634, 13632, 11842, 11868, 14525, 13734, 10828, 1704, 15365, 15363, 7462, 3842
 		};
 
+	public static final int[] ELEMENTALWEPS =
+			{1324};
+
 	/**
 	 * Processing the engine
 	 */

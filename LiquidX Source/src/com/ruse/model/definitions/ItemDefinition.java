@@ -90,6 +90,9 @@ public class ItemDefinition {
 				case "double-handed":
 					definition.isTwoHanded = Boolean.valueOf(value);
 					break;
+					case "elemental":
+						definition.elemental = Integer.valueOf(value);
+						break;
 				case "equipment type":
 					definition.equipmentType = EquipmentType.valueOf(value);
 					break;
@@ -168,7 +171,14 @@ public class ItemDefinition {
 	public String getDescription() {
 		return description;
 	}
-	
+	public int getElemental() {
+		return elemental;
+	}
+
+
+	public void setElemental(int i) {
+		 this.elemental = i;
+	}
 	/**
 	 * Flag to check if item is stackable.
 	 */
@@ -223,6 +233,8 @@ public class ItemDefinition {
 	}
 		
 	private boolean isTwoHanded;
+
+	private int elemental;
 	
 	/**
 	 * Checks if item is two-handed

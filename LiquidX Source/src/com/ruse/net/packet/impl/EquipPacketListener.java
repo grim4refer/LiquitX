@@ -10,6 +10,7 @@ import com.ruse.model.Skill;
 import com.ruse.model.container.impl.Equipment;
 import com.ruse.model.container.impl.Inventory;
 import com.ruse.model.definitions.ItemDefinition;
+import com.ruse.model.definitions.NpcDefinition;
 import com.ruse.model.definitions.WeaponAnimations;
 import com.ruse.model.definitions.WeaponInterfaces;
 import com.ruse.net.packet.Packet;

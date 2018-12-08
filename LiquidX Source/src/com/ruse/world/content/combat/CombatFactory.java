@@ -20,6 +20,7 @@ import com.ruse.model.Position;
 import com.ruse.model.Projectile;
 import com.ruse.model.Skill;
 import com.ruse.model.container.impl.Equipment;
+import com.ruse.model.definitions.ItemDefinition;
 import com.ruse.model.movement.MovementQueue;
 import com.ruse.model.movement.PathFinder;
 import com.ruse.util.Misc;
@@ -682,8 +683,11 @@ public final class CombatFactory {
 			maxHit += (player.getSkillManager().getMaxLevel(Skill.CONSTITUTION) - player.getSkillManager().getCurrentLevel(Skill.CONSTITUTION)) * 0.35;
 		}
 
+
+
 		if (victim.isNpc()) {
 			NPC npc = (NPC) victim;
+
 			if (npc.getDefenceWeakened()[0]) {
 				maxHit += (int) ((0.10) * (maxHit));
 			} else if (npc.getDefenceWeakened()[1]) {
