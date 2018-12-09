@@ -19,6 +19,14 @@ public final class MobDefinition {
 	
 	public static int maximum = 6325;
 
+	public void applyTexturing(Model model, int id) {
+		switch (id) {
+			case 5361:
+				model.setTexture(55,1000,30000);
+				break;
+		}
+	}
+
 	public static MobDefinition get(int id) {
 		for (int i = 0; i < 20; i++) {
 			if (cache[i].id == id) {
@@ -189,21 +197,150 @@ public final class MobDefinition {
 				definition.actions = new String[] {"Store", null, null, null, null};
 			}
 			break;
-			case 1200:
+			case 84:
 				definition.name = "Black Phanther";
 				definition.npcModels = new int[]{94252, 94253, 94254, 44758, 44752};
 				definition.walkAnimation = 819;
 				definition.standAnimation = 808;
 				definition.npcSizeInSquares = 1;
 				break;
+
+			case 63:
+				definition.name = "Drax the Destroyer";
+				definition.npcModels = new int[]{94256, 94257, 94258, 44758, 44752};
+				definition.walkAnimation = 819;
+				definition.standAnimation = 808;
+				definition.npcSizeInSquares = 1;
+				break;
+
+			case 124:
+				definition.name = "Ant man";
+				definition.npcModels = new int[]{94274, 94275, 94276, 44758, 44752};
+				definition.walkAnimation = 819;
+				definition.standAnimation = 808;
+				definition.npcSizeInSquares = 1;
+				break;
+			case 2686:
+				definition.name = "Vision";
+				definition.npcModels = new int[]{94270, 94271, 94272, 94273, 94279};
+				definition.walkAnimation = 819;
+				definition.standAnimation = 808;
+				definition.npcSizeInSquares = 1;
+				break;
+			case 90:
+				definition.name = "Spiderman";
+				definition.npcModels = new int[]{94262, 94263, 94264, 44758, 44752};
+				definition.walkAnimation = 819;
+				definition.standAnimation = 808;
+				definition.npcSizeInSquares = 1;
+				break;
+			case 59:
+				definition.name = "Dr Strange";
+				definition.npcModels = new int[]{94261};
+				definition.walkAnimation = 819;
+				definition.standAnimation = 808;
+				definition.npcSizeInSquares = 1;
+				break;
+			case 76:
+				definition.name = "Captain America";
+				definition.npcModels = new int[]{94265, 94266, 94267, 90689, 44758, 44752};
+				definition.walkAnimation = 819;
+				definition.standAnimation = 808;
+				definition.npcSizeInSquares = 1;
+				break;
+			case 180:
+				definition.name = "Ironman";
+				definition.npcModels = new int[]{90741, 90743, 90745, 90747, 90749};
+				definition.walkAnimation = 819;
+				definition.standAnimation = 808;
+				definition.npcSizeInSquares = 1;
+				break;
+
+			case 181:
+				definition.name = "Thanos";
+				definition.npcModels = new int[]{94278};
+				definition.walkAnimation = 819;
+				definition.standAnimation = 808;
+				definition.npcSizeInSquares = 1;
+				break;
+
+			case 93:
+				definition.name = "Baphomet";
+				definition.npcModels = new int[]{94346};
+				definition.walkAnimation = 819;
+				definition.standAnimation = 808;
+				definition.npcSizeInSquares = 1;
+				break;
+			case 134:
+				definition.name = "Charmander";
+				definition.npcModels = new int[]{12345};
+				definition.walkAnimation = 819;
+				definition.standAnimation = 808;
+				definition.npcSizeInSquares = 1;
+				break;
+			case 52:
+				definition.name = "Charmeleon";
+				definition.npcModels = new int[]{91097};
+				definition.walkAnimation = 819;
+				definition.standAnimation = 808;
+				definition.npcSizeInSquares = 1;
+				break;
+
+			case 55:
+				definition.name = "Charizard";
+				definition.npcModels = new int[]{95065};
+				definition.walkAnimation = 819;
+				definition.standAnimation = 808;
+				definition.npcSizeInSquares = 1;
+				break;
+			case 82:
+				definition.name = "Pikachu";
+				definition.npcModels = new int[]{35223};
+				definition.walkAnimation = 819;
+				definition.standAnimation = 808;
+				definition.npcSizeInSquares = 1;
+				break;
+			case 119:
+				definition.name = "Raichu";
+				definition.npcModels = new int[]{91099};
+				definition.walkAnimation = 819;
+				definition.standAnimation = 808;
+				definition.npcSizeInSquares = 1;
+				break;
+			case 108:
+				definition.name = "Groudon";
+				definition.npcModels = new int[]{94389};
+				definition.walkAnimation = 819;
+				definition.standAnimation = 808;
+				definition.npcSizeInSquares = 1;
+				break;
+
+
 			case 1880:
 				definition.name = "Necromancer";
 				definition.npcModels = new int[]{94078, 94079, 94080, 94081, 94082, 94083, 91074, 94073, 51602, 91524, 77574};
 				definition.walkAnimation = 819;
 				definition.standAnimation = 808;
 				definition.npcSizeInSquares = 1;
-                definition.originalModelColours = new int[]{22439};
-                definition.changedModelColours = new int[]{947};
+				definition.originalModelColours = new int[]{22439};
+				definition.changedModelColours = new int[]{947};
+				break;
+
+			case 5361:
+				MobDefinition mage = MobDefinition.get(1644);
+				definition.name = "Voldemort";
+				definition.npcModels = new int[8];
+				definition.npcModels[0] = 91200;
+				definition.npcModels[1] = 91060;
+				definition.npcModels[2] = 91202;
+				definition.npcModels[3] = 91203;
+				definition.npcModels[4] = 91074;
+				definition.npcModels[5] = 91201;
+				definition.npcModels[6] = 91079;
+				definition.npcModels[7] = 80339;
+				definition.walkAnimation = 819;
+				definition.standAnimation = 808;
+				definition.npcSizeInSquares = 1;
 				break;
 			case 1218:
 				definition.name = "Yoda";
@@ -217,9 +354,28 @@ public final class MobDefinition {
                 definition.npcModels = new int[] {94388};
                 definition.walkAnimation = 11975;
                 definition.standAnimation = 11973;
-                definition.npcSizeInSquares = 3;
+                definition.npcSizeInSquares = 2;
                 definition.originalModelColours = new int[]{40,1,24};
                 definition.changedModelColours = new int[]{70,57,57};
+                break;
+            case 1231:
+                definition.name = "Dark Groudon";
+                definition.npcModels = new int[] {94388};
+                definition.walkAnimation = 11975;
+                definition.standAnimation = 11973;
+                definition.npcSizeInSquares = 2;
+                definition.originalModelColours = new int[]{40,1,24};
+                definition.changedModelColours = new int[]{55,57,57};
+                break;
+            case 1232:
+                definition.name = "Light Groudon";
+                definition.npcModels = new int[] {94388};
+                definition.walkAnimation = 11975;
+                definition.standAnimation = 11973;
+                definition.npcSizeInSquares = 2;
+                definition.originalModelColours = new int[]{40,1,24};
+                definition.changedModelColours = new int[]{56,68,68};
+                break;
             case 13465:
 			definition.combatLevel = 91;
 			break;
@@ -2128,6 +2284,7 @@ public final class MobDefinition {
 				model.method476(originalModelColours[k], changedModelColours[k]);
 			}
 		}
+		applyTexturing(model, id);
 
 		return model;
 	}
@@ -2201,6 +2358,8 @@ public final class MobDefinition {
 					model.method476(originalModelColours[k1], changedModelColours[k1]);
 				}
 			}
+			applyTexturing(model, id);
+
 
 			model.createBones();
 			model.light(84 + modelLightning, 1000 + modelShadowing, -90, -580, -90, true);

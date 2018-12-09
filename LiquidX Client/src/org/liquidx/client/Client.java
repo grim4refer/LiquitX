@@ -11134,6 +11134,21 @@ public class Client extends GameRenderer {
 			aByteArray912 = abyte2;
 			Rasterizer.method370(1);
 		}
+		if (Rasterizer.anIntArray1480[56] >= j) {
+			Background background_2 = Rasterizer.aBackgroundArray1474s[56];
+			int i1 = background_2.imgWidth * background_2.imgHeight - 1;
+			int l1 = background_2.imgWidth * anInt945 * 2;
+			byte abyte2[] = background_2.imgPixels;
+			byte abyte5[] = aByteArray912;
+
+			for (int k2 = 0; k2 <= i1; k2++) {
+				abyte5[k2] = abyte2[k2 - l1 & i1];
+			}
+
+			background_2.imgPixels = abyte5;
+			aByteArray912 = abyte2;
+			Rasterizer.method370(56);
+		}
 
 		if (Rasterizer.anIntArray1480[40] >= j) {
 			Background background_2 = Rasterizer.aBackgroundArray1474s[40];

@@ -170,6 +170,35 @@ public class Model extends Animable {
 		}
 	}
 
+	public void setTexture(int tex,int color1, int colo2) {
+		anInt1642 = anInt1630;
+		int set2 = 0;
+		if (anIntArray1637 == null) {
+			anIntArray1637 = new int[anInt1630];
+		}
+
+		if (anIntArray1640 == null) {
+			anIntArray1640 = new int[anInt1630];
+		}
+
+		anIntArray1645 = new int[anInt1630];
+		anIntArray1644 = new int[anInt1630];
+		anIntArray1643 = new int[anInt1630];
+
+
+		for(int i = 0; i < anInt1630; ++i) {
+			if(anIntArray1640[i] >= color1 && anIntArray1640[i] <= colo2) {
+
+				anIntArray1640[i] = tex;
+				anIntArray1637[i] = 3 + set2;
+				set2 += 4;
+			} else {
+				anIntArray1640[i] = anIntArray1640[i];
+
+			}
+		}
+	}
+
 
 	public void setTexture(int tex) {
 		this.anInt1642 = this.anInt1630;

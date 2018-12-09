@@ -27,10 +27,11 @@ public enum TeleportLocations {
 	//MONSTERS
     TRAINING_ISLAND(new Position(2853, 3239, 0), ""),
 	GODZILLA(new Position(3558, 9948, 0), ""),
-    YAKS(new Position(3204, 3264, 0), ""),
+    MAGEGREY(new Position(1748, 5325, 0), ""),
     BANDITS(new Position(3171, 2981, 0), ""),
     GHOULS(new Position(3420, 3510, 0), ""),
     GROUDON(new Position(1760, 5164, 0), ""),
+    GROUDON2(new Position(2720, 9630, 0), ""),
     GOBLINS(new Position(3259, 3228, 0), ""),
     DUST_DEVILS(new Position(3279, 2964, 0), ""),
     CHICKENS(new Position(3235, 3295, 0), ""),
@@ -39,15 +40,15 @@ public enum TeleportLocations {
     ARMOURED_ZOMBIES(new Position(3085, 9672, 0), ""),
     
     //DUNGEONS
-    EDGE_DUNGEON(new Position(3097, 9870, 0), ""),
+    HEROESCAVE(new Position(3147, 9913, 0), ""),
     SLAYER_TOWER(new Position(3429, 3538, 0), ""),
-    BRIMHAVEN_DUNGEON(new Position(2713, 9564, 0), ""),
-    TAVERLY_DUNGEON(new Position(2884, 9797, 0), ""),
-    GODWARS_DUNGEON(new Position(2871, 5318, 2), ""),
-    STRYKEWYRM_CAVERN(new Position(2731, 5095, 0), ""),
-	ANCIENT_CAVERN(new Position(1746, 5325, 0), ""),
-    CHAOS_TUNNELS(new Position(3184, 5471, 0), ""),
-  	
+//    BRIMHAVEN_DUNGEON(new Position(2713, 9564, 0), ""),
+//    TAVERLY_DUNGEON(new Position(2884, 9797, 0), ""),
+//    GODWARS_DUNGEON(new Position(2871, 5318, 2), ""),
+//    STRYKEWYRM_CAVERN(new Position(2731, 5095, 0), ""),
+//	ANCIENT_CAVERN(new Position(1746, 5325, 0), ""),
+//    CHAOS_TUNNELS(new Position(3184, 5471, 0), ""),
+//
 	//MODERN BOSSES
 	GWD(new Position(2871, 5318, 2), "Welcome - to the God Wars."),
 	DAGKINGS(new Position(1908, 4367, 0), ""),

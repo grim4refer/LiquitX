@@ -28,7 +28,7 @@ public final class ItemDefinition {
 	public static int totalItems;
 
 
-    public static void applyTexturing(Model model, int id) {
+    public void applyTexturing(Model model, int id) {
         switch (id) {
 			case 14024:
 				break;
@@ -548,9 +548,9 @@ public final class ItemDefinition {
 			break;
 			case 1153:
 				itemDef.name = "Starter helm";
-				itemDef.modelID = 94506;
-				itemDef.maleWearId = 94507;
-				itemDef.femaleWearId = 94507;
+				itemDef.modelID = 43;
+				itemDef.maleWearId = 44;
+				itemDef.femaleWearId = 44;
 				break;
 			case 17415:
 				itemDef.name = "Starter gear upgrade stone";
@@ -565,9 +565,9 @@ public final class ItemDefinition {
 				break;
 			case 1115:
 				itemDef.name = "Starter platebody";
-				itemDef.modelID = 94508;
-				itemDef.maleWearId = 94509;
-				itemDef.femaleWearId = 94509;
+				itemDef.modelID = 45;
+				itemDef.maleWearId = 46;
+				itemDef.femaleWearId = 46;
 
 				break;
 
@@ -580,9 +580,9 @@ public final class ItemDefinition {
 
 			case 1067:
 				itemDef.name = "Starter platelegs";
-				itemDef.modelID = 94510;
-				itemDef.maleWearId = 94511;
-				itemDef.femaleWearId = 94511;
+				itemDef.modelID = 47;
+				itemDef.maleWearId = 48;
+				itemDef.femaleWearId = 48;
 				break;
 
 			case 1069:
@@ -593,10 +593,10 @@ public final class ItemDefinition {
 				break;
 
 			case 1323:
-				itemDef.name = "Starter Axe";
-				itemDef.modelID = 90502;
-				itemDef.maleWearId = 90503;
-				itemDef.femaleWearId = 90503;
+				itemDef.name = "@red@Starter Scythe";
+				itemDef.modelID = 94458;
+				itemDef.maleWearId = 94459;
+				itemDef.femaleWearId = 94459;
 				break;
 
 			case 1325:

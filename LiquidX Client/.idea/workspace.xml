@@ -18,8 +18,8 @@
       <file leaf-file-name="ItemDefinition.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ItemDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="687" column="22" lean-forward="true" selection-start-line="687" selection-start-column="22" selection-end-line="687" selection-end-column="22" />
+            <state relative-caret-position="243">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -27,25 +27,23 @@
       <file leaf-file-name="Client.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="11102" column="35" selection-start-line="11102" selection-start-column="35" selection-end-line="11102" selection-end-column="35" />
+            <state relative-caret-position="196">
+              <caret line="17671" column="16" selection-start-line="17671" selection-start-column="16" selection-end-line="17671" selection-end-column="16" />
               <folding>
-                <element signature="e#517111#517112#0" expanded="true" />
-                <element signature="e#517136#517137#0" expanded="true" />
                 <element signature="e#517427#517428#0" expanded="true" />
-                <element signature="e#517457#517458#0" expanded="true" />
-                <element signature="e#517835#517836#0" expanded="true" />
-                <element signature="e#517870#517871#0" expanded="true" />
+                <element signature="e#517482#517483#0" expanded="true" />
+                <element signature="e#520674#520675#0" expanded="true" />
+                <element signature="e#520701#520702#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MobDefinition.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MobDefinition.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/cache/definition/MobDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="200" column="54" selection-start-line="200" selection-start-column="49" selection-end-line="200" selection-end-column="54" />
+            <state relative-caret-position="118">
+              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,8 +54,8 @@
       <file leaf-file-name="NPCTypeList.java" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Downloads/DsClient 2/com/dreamscape/cache/configs/npctype/NPCTypeList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="477" column="45" selection-start-line="477" selection-start-column="40" selection-end-line="477" selection-end-column="45" />
+            <state relative-caret-position="37932">
+              <caret line="3143" column="38" selection-start-line="3143" selection-start-column="29" selection-end-line="3143" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -65,7 +63,7 @@
       <file leaf-file-name="Thread.java" pinned="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10380">
+            <state relative-caret-position="15">
               <caret line="747" selection-start-line="747" selection-end-line="747" />
             </state>
           </provider>
@@ -80,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Model.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/world/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19605">
-              <caret line="1316" column="23" selection-start-line="1316" selection-start-column="23" selection-end-line="1316" selection-end-column="23" />
+            <state relative-caret-position="214">
+              <caret line="193" column="26" selection-start-line="193" selection-start-column="26" selection-end-line="193" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -93,36 +91,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>anIntArray1627</find>
-      <find>int i, int j, int l</find>
-      <find>Rapier</find>
-      <find>starter</find>
-      <find>priority</find>
-      <find>anIntArray1638</find>
-      <find>Texture</find>
-      <find>scale2</find>
-      <find>inventory</find>
-      <find>method202</find>
-      <find>client.java</find>
-      <find>Starter</find>
-      <find>elemental</find>
-      <find>1323</find>
-      <find>3222</find>
-      <find>groudon</find>
-      <find>et.walkAnimatio</find>
-      <find>8350</find>
-      <find>changedModelColours</find>
-      <find>Rasterizer.</find>
-      <find>1675</find>
-      <find>god</find>
-      <find>donator ra</find>
-      <find>21074</find>
-      <find>5529</find>
-      <find>[60]</find>
-      <find>[50</find>
-      <find>[50]</find>
-      <find>[40]</find>
-      <find>Groudon</find>
+      <find>venom</find>
+      <find>spiderman</find>
+      <find>size</find>
+      <find>dr</find>
+      <find>captain</find>
+      <find>thanos</find>
+      <find>E</find>
+      <find>Charmander</find>
+      <find>Charmel</find>
+      <find>chariza</find>
+      <find>ric</find>
+      <find>pikachu</find>
+      <find>Pikachu</find>
+      <find>pokemon</find>
+      <find>Hulk</find>
+      <find>heroes dun</find>
+      <find>Brimhaven</find>
+      <find>Dungeon</find>
+      <find>mageGr</find>
+      <find>707</find>
+      <find>Magegray</find>
+      <find>1203</find>
+      <find>voldemo</find>
+      <find>voldemort</find>
+      <find>5438</find>
+      <find>original</find>
+      <find>return model</find>
+      <find>setTex</find>
+      <find>voldemord</find>
+      <find>darj</find>
     </findStrings>
     <replaceStrings>
       <replace>texture_edge_a</replace>
@@ -176,19 +174,18 @@
         <option value="$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ObjectDefinition.java" />
         <option value="$PROJECT_DIR$/src/org/liquidx/client/WrappedByteBuffer.java" />
         <option value="$USER_HOME$/Downloads/DsClient 2/com/dreamscape/Model.java" />
-        <option value="$PROJECT_DIR$/src/org/liquidx/client/world/Model.java" />
         <option value="$USER_HOME$/Downloads/DreamScape/Client/src/ItemDef_2.java" />
         <option value="$PROJECT_DIR$/src/org/liquidx/client/world/CustomObjects.java" />
-        <option value="$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ItemDefinition.java" />
         <option value="$PROJECT_DIR$/src/org/liquidx/client/Client.java" />
+        <option value="$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ItemDefinition.java" />
         <option value="$PROJECT_DIR$/src/org/liquidx/client/cache/definition/MobDefinition.java" />
+        <option value="$PROJECT_DIR$/src/org/liquidx/client/world/Model.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="22" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1280" />
-    <option name="height" value="778" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -196,6 +193,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -258,8 +257,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -373,7 +370,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32892805" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.83439493" visible="true" weight="0.2714055" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.83439493" visible="true" weight="0.27544427" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49919224" weight="0.32827586" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -391,14 +388,14 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35034484" />
       <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.83439493" visible="true" weight="0.25121164" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35034484" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -408,7 +405,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32892805" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info id="Capture Tool" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32892805" />
@@ -435,12 +432,10 @@
         <state relative-caret-position="210015">
           <caret line="14001" column="103" selection-start-line="14001" selection-start-column="99" selection-end-line="14001" selection-end-column="103" />
           <folding>
-            <element signature="e#517111#517112#0" expanded="true" />
-            <element signature="e#517136#517137#0" expanded="true" />
             <element signature="e#517427#517428#0" expanded="true" />
-            <element signature="e#517457#517458#0" expanded="true" />
-            <element signature="e#517835#517836#0" expanded="true" />
-            <element signature="e#517870#517871#0" expanded="true" />
+            <element signature="e#517482#517483#0" expanded="true" />
+            <element signature="e#520674#520675#0" expanded="true" />
+            <element signature="e#520701#520702#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -464,12 +459,10 @@
         <state relative-caret-position="166350">
           <caret line="11090" column="24" selection-start-line="11090" selection-start-column="24" selection-end-line="11090" selection-end-column="24" />
           <folding>
-            <element signature="e#517111#517112#0" expanded="true" />
-            <element signature="e#517136#517137#0" expanded="true" />
             <element signature="e#517427#517428#0" expanded="true" />
-            <element signature="e#517457#517458#0" expanded="true" />
-            <element signature="e#517835#517836#0" expanded="true" />
-            <element signature="e#517870#517871#0" expanded="true" />
+            <element signature="e#517482#517483#0" expanded="true" />
+            <element signature="e#520674#520675#0" expanded="true" />
+            <element signature="e#520701#520702#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -706,46 +699,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/world/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19605">
-          <caret line="1316" column="23" selection-start-line="1316" selection-start-column="23" selection-end-line="1316" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10380">
-          <caret line="747" selection-start-line="747" selection-end-line="747" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/cache/definition/ItemDefinition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="687" column="22" lean-forward="true" selection-start-line="687" selection-start-column="22" selection-end-line="687" selection-end-column="22" />
+        <state relative-caret-position="243">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="11102" column="35" selection-start-line="11102" selection-start-column="35" selection-end-line="11102" selection-end-column="35" />
+        <state relative-caret-position="196">
+          <caret line="17671" column="16" selection-start-line="17671" selection-start-column="16" selection-end-line="17671" selection-end-column="16" />
           <folding>
-            <element signature="e#517111#517112#0" expanded="true" />
-            <element signature="e#517136#517137#0" expanded="true" />
             <element signature="e#517427#517428#0" expanded="true" />
-            <element signature="e#517457#517458#0" expanded="true" />
-            <element signature="e#517835#517836#0" expanded="true" />
-            <element signature="e#517870#517871#0" expanded="true" />
+            <element signature="e#517482#517483#0" expanded="true" />
+            <element signature="e#520674#520675#0" expanded="true" />
+            <element signature="e#520701#520702#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/DsClient 2/com/dreamscape/cache/configs/npctype/NPCTypeList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="477" column="45" selection-start-line="477" selection-start-column="40" selection-end-line="477" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -756,13 +726,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="747" selection-start-line="747" selection-end-line="747" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/DsClient 2/com/dreamscape/cache/configs/npctype/NPCTypeList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37932">
+          <caret line="3143" column="38" selection-start-line="3143" selection-start-column="29" selection-end-line="3143" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/cache/definition/MobDefinition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="200" column="54" selection-start-line="200" selection-start-column="49" selection-end-line="200" selection-end-column="54" />
+        <state relative-caret-position="118">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/liquidx/client/world/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="193" column="26" selection-start-line="193" selection-start-column="26" selection-end-line="193" selection-end-column="26" />
         </state>
       </provider>
     </entry>
