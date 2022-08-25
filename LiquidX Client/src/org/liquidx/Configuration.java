@@ -30,7 +30,7 @@ public class Configuration {
 
 	
 	/** FEATURES **/
-	public static boolean SAVE_ACCOUNTS = false;
+	public static boolean SAVE_ACCOUNTS = true;
 	public static boolean DISPLAY_HP_ABOVE_HEAD = false;
 	public static boolean DISPLAY_USERNAMES_ABOVE_HEAD = false;
 	public static boolean TWEENING_ENABLED = true;
