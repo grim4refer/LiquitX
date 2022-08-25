@@ -1,0 +1,18 @@
+data/saves/characters/*
+*.xml
+*.iml
+
+*.class
+data/saves/logs/*
+data/saves/clans/*
+.classpath
+.project
+patching/*
+/patching/
+bin/*
+/bin/
+data/def/txt/items - Copy.txt
+data/saves/farming/Crimson.txt
+data/saves/Bans.txt
+data/saves/clans/LiquidX.json
+data/saves/starters.txt

@@ -1,0 +1,5 @@
+This is how us debian bois run our servers:
+
+
+screen
+java -server -Xmx2048m -classpath bin:lib/* com.ruse.GameServer
